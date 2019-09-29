@@ -1,0 +1,53 @@
+$bg: #0B0B0B;
+$primary: #EEF0F2;
+$secondary: #1F3822;
+
+
+.anim-hov-fast {
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+}
+
+// @font-face {
+//   font-family: 'AvenirNext-Bold';
+//   src: url('/assets/fonts/AvenirNext/AvenirNextLTPro-Bold.ttf');
+// }
+
+// @font-face {
+//   font-family: 'AvenirNext-Regular';
+//   src: url('/assets/fonts/AvenirNext/AvenirNextLTPro-Regular.ttf');
+// }
+
+
+// $textfont: 'AvenirNext-Regular', serif;
+// $titlefont: 'AvenirNext-Bold', serif;
+
+// Small tablets and large smartphones (landscape view)
+$small-phone-width: 310px;
+
+// Small tablets (portrait view)
+
+$tablet-width: 768px;
+
+// Large tablets and desktops
+$desktop-width: 1100px;
+
+// we will design for mobile first so only need to media query tablets and desktop views.
+@mixin phone {
+  @media (min-width: #{$small-phone-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+    @media (min-width: #{$tablet-width + 1}) {
+      @content;
+  }
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
