@@ -40,15 +40,15 @@ body, html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-animation: fadein 2s;
+  -webkit-animation: fadein 4s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s;
+  -moz-animation: fadein 4s;
   /* Firefox < 16 */
-  -ms-animation: fadein 2s;
+  -ms-animation: fadein 4s;
   /* Internet Explorer */
-  -o-animation: fadein 2s;
+  -o-animation: fadein 4s;
   /* Opera < 12.1 */
-  animation: fadein 2s;
+  animation: fadein 4s;
 }
 
 .content {
@@ -185,17 +185,22 @@ body, html {
     margin-bottom: 0.4em;
     padding: 0;
   }
-
-  @keyframes slide {
-    0% {
-      background-image: url(/images/bg1.jpg);
-    }
-    33% {
-      background-image: url(/images/bg2.jpg);
-    }
-    67% {
-      background-image: url(/images/bg3.jpg);
-    }
+}
+@keyframes slide {
+  0% {
+    background-image: url(/images/bg2.jpg);
+  }
+  20% {
+    background-image: url(/images/bg1.jpg);
+  }
+  40% {
+    background-image: url(/images/bg3.jpg);
+  }
+  60% {
+    background-image: url(/images/bg4.jpg);
+  }
+  80% {
+    background-image: url(/images/bg3.jpg);
   }
 }
 .anim-hov-fast {
