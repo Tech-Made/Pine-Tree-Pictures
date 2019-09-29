@@ -15,12 +15,12 @@ const cors = require('cors')
 app.set('views', path.join(__dirname, 'views'));
 
 app.engine('hbs', exphbs({
-    defaultLayout: "main",
-    extname: ".hbs",
-    helpers: require("handlebars-helpers")(),
-    layoutsDir: __dirname + '/views/layouts/',
-    partialsDir: __dirname + '/views/partials/'
-  }));
+  defaultLayout: "main",
+  extname: ".hbs",
+  helpers: require("handlebars-helpers")(),
+  layoutsDir: __dirname + '/views/layouts/',
+  partialsDir: __dirname + '/views/partials/'
+}));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 

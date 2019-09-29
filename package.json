@@ -2,9 +2,9 @@
   "name": "pine-tree-pictures",
   "version": "1.0.0",
   "description": "Pine Tree Pictures",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "mocha **/*.test.js",
+    "test": "mocha test/*_test.js",
     "test-watch": "nodemon --exec 'npm test'"
   },
   "engines": {
