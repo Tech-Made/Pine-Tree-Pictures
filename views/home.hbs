@@ -1,0 +1,35 @@
+<div class='landing' id='landing'>
+    <div class='content'>
+        <h1 class='home-title'>PINE TREE PICTURES</h1>
+        <div class="menu">
+            <a href='/producer'><p id='producer'>Producer</p></a>
+            <a href='/editor'><p id='editor'>Editor</p></a>
+            <a href='/videographer'><p id='videographer'>Videographer</p></a>
+            <a href='/photographer'><p id='photographer'>Photographer</p></a>
+            <a href='/contact'><p>Contact</p></a>
+        </div>
+    </div>  
+</div>
+
+<script>
+    if (document.body.clientWidth > 769) {
+        document.getElementById('producer').onmouseover=function(){hoverBg('bg3.jpg');};
+        document.getElementById('producer').onmouseout=function(){leaveBg('bg3.jpg');};   
+        document.getElementById('editor').onmouseover=function(){hoverBg('bg1.jpg');};
+        document.getElementById('editor').onmouseout=function(){leaveBg('bg1.jpg');};    
+        document.getElementById('videographer').onmouseover=function(){hoverBg('bg2.jpg');};
+        document.getElementById('videographer').onmouseout=function(){leaveBg('bg2.jpg');};   
+        document.getElementById('photographer').onmouseover=function(){hoverBg('bg4.jpg');};
+        document.getElementById('photographer').onmouseout=function(){leaveBg('bg4.jpg');};   
+
+        const hoverBg = (bg) => {
+            document.getElementById('landing').style.background = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/${bg}')`;
+        }
+        const leaveBg = (bg) => {
+            document.getElementById('landing').style.background = `url('/images/${bg}')`;
+        }
+    }
+
+</script>
+{{!-- document.getElementById("landing").style.animation = "fadein 1.6s 1"; --}}
+{{!-- document.getElementById("landing").style.animation = "fadein 5s 1"; --}}
