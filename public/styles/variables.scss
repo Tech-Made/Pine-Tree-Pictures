@@ -1,7 +1,26 @@
 $bg: #0B0B0B;
 $primary: #EEF0F2;
+$primarylight: rgba(176, 175, 175, 0.882);
 $secondary: #1F3822;
 
+@font-face {
+  font-family: 'DINCondensed-Bold';
+  src: url('/assets/fonts/DINCondensed-Bold.ttf');
+}
+
+$textfont: 'DINCondensed-Bold', serif;
+
+@font-face {
+  font-family: 'Sf-Prop-Display-Black';
+  src: url('/assets/fonts/SF.otf');
+}
+
+$titlefont: 'Sf-Prop-Display-Black', serif;
+
+.center {
+  margin: auto;
+  width: 50%;
+}
 
 .anim-hov-fast {
   -webkit-transition: background-color .5s ease-out;
@@ -10,22 +29,52 @@ $secondary: #1F3822;
   transition: background-color .5s ease-out;
 }
 
+.btn_primary {
+  width: 155px;
+  height: 39px;
+  color: rgb(188, 188, 190);
+  background: rgb(27, 49, 30);
+  border-radius: 3px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.btn_primary:hover {
+  color: $primary;
+  background: rgb(37, 68, 41);
+}
+
+.dots {
+  color: rgb(101, 101, 101);
+  font-size: 5px;
+  margin-right: 2.4em;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) { 
+  .dots {
+    color: rgb(101, 101, 101);
+    font-size: 5px;
+    margin-right: 2.4em;
+    letter-spacing: 1px;
+    }
+}
+
 // @font-face {
-//   font-family: 'AvenirNext-Bold';
-//   src: url('/assets/fonts/AvenirNext/AvenirNextLTPro-Bold.ttf');
+//   font-family: 'DINConfensed-Bold';
+//   src: url('../assets/fonts/DINConfensed-Bold.ttf');
 // }
 
 // @font-face {
-//   font-family: 'AvenirNext-Regular';
-//   src: url('/assets/fonts/AvenirNext/AvenirNextLTPro-Regular.ttf');
+//   font-family: 'SFPro';
+//   src: url('../assetsSf-Pro-Display-Black.ttf');
 // }
 
 
+// $titlefont: 'DINConfensed-Bold', serif;
 // $textfont: 'AvenirNext-Regular', serif;
-// $titlefont: 'AvenirNext-Bold', serif;
 
-// Small tablets and large smartphones (landscape view)
-$small-phone-width: 310px;
 
 // Small tablets (portrait view)
 

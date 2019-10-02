@@ -11,10 +11,10 @@
         <ul>
             <div>
                 <li><a class="header-text hover" href='/'><p>Home</p></a></li>
-                <li><a class="header-text hover" href='/director'><p>Director</p></a></li>
-                <li><a class="header-text active" href='/producer'><p>Producer</p></a></li>
+                <li><a class="header-text hver" href='/director'><p>Director</p></a></li>
+                <li><a class="header-text hover" href='/producer'><p>Producer</p></a></li>
                 <li><a class="header-text hover" href='/editor'><p>Editor</p></a></li>
-                <li><a class="header-text hover" href='/photographer'><p>Photographer</p></a></li>
+                <li><a class="header-text active" href='/photographer'><p>Photographer</p></a></li>
                 <li><a class="header-text hover" href='/contact'><p>Contact</p></a></li>
             </div>
             <div>
@@ -30,19 +30,16 @@
 <div class="individual-section">
         <div class="title-display">
             <p class="dots">• • • • • • • • • • • • • • </p>
-            <h2 class='work-title'>Producer <span class='work-name'>Aiden Magarian</span></h2>
+            <h2 class='work-title'>Photographer <span class='work-name'>Daniel Prakopcyk</span></h2>
         </div>
         <div id='workGridContainer' class="work-grid-container">
-            <img id='videoOne' class="bg" src='/images/bg1.jpg'></img>
-            <img id='videoTwo' class="bg" src='/images/producer/prod2.jpg'></img>
-            <img id='videoThree' class="bg" src='/images/producer/prod3.jpg'></img>
-            <img id='videoFour' class="bg" src='/images/producer/prod4.jpg'></img>
+            <img id='videoOne' class="bg" src='/images/editor/editor1.jpg'></img>
+            <img id='videoTwo' class="bg" src='/images/editor/editor2.jpg'></img>
+            <img id='videoThree' class="bg" src='/images/editor/editor3.jpg'></img>
+            <img id='videoFour' class="bg" src='/images/editor/editor4.jpg'></img>
 
-            <img id='videoFive' class="bg hidden" src='/images/bg1.jpg'></img>
-            <img id='videoSix' class="bg hidden" src='/images/producer/prod2.jpg'></img>
-            <img id='videoSeven' class="bg hidden" src='/images/producer/prod3.jpg'></img>
-            <img id='videoEight' class="bg hidden" src='/images/producer/prod4.jpg'></img>
-
+            <img id='videoFive' class="bg hidden" src='/images/editor/editor5.jpg'></img>
+            <img id='videoSix' class="bg hidden" src='/images/editor/editor6.jpg'></img>
             </a>
         </div>
         <p id='seemore' class='seemore'>__See More__</p>
@@ -313,36 +310,30 @@
     var btn4 = document.getElementById("videoFour");
     var btn5 = document.getElementById("videoFive");
     var btn6 = document.getElementById("videoSix");
-    var btn7 = document.getElementById("videoSeven");
-    var btn8 = document.getElementById("videoEight");
 
 
     $('#seemore').click(() => {
         console.log('here')
         btn5.classList.remove('hidden');
         btn6.classList.remove('hidden');
-        btn7.classList.remove('hidden');
-        btn8.classList.remove('hidden');
     });
 
 
 
     // unused.. Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
-
-
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
+        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/332082943';
     }
     btn2.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
+        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/310270361';
     }
     btn3.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/BxFk-6KppE4';
     }
     btn4.onclick = function() {
         modal.style.display = "block";
@@ -355,14 +346,6 @@
     btn6.onclick = function() {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
-    }
-    btn7.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
-    }
-    btn8.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/oOWBsmgjmPo';
     }
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {

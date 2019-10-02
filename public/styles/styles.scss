@@ -1,10 +1,21 @@
 @import "variables.scss";
 @import "home.scss";
 @import "individual_work.scss";
-
+@import "contact.scss";
 
 html, body {
     background-color: $bg;
     height: 100vh;
-    // overflow: hidden;
+    font-family: $textfont;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.logo {
+    font-family: $titlefont;
 }

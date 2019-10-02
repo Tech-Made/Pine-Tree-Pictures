@@ -7,23 +7,34 @@
     margin: 0 auto;
     display: block;
     padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title-display {
+        display: flex;
+        width: 70%;
+        // justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
     .work-title {
+        font-family: $titlefont;
         color: $primary;
-        font-size: 3em;
+        font-size: 2em;
         font-weight: bold;
         letter-spacing: 1.2px;
         margin: 0;
     }
     .work-name {
         color: $bg;
-        font-size: 2em;
+        font-size: .9em;
         font-weight: bold;
         letter-spacing: 1px;
         text-shadow:
-		-1px -1px 0 $primary,
-		1px -1px 0 $primary,
-		-1px 1px 0 $primary,
-        1px 1px 0 $primary;
+		-1px -1px 0 $primarylight,
+		1px -1px 0 $primarylight,
+		-1px 1px 0 $primarylight,
+        1px 1px 0 $primarylight;
         margin: 0;
         cursor: pointer;
     }
@@ -34,6 +45,7 @@
         color: $primary;
         font-size: 1.5em;
         margin-bottom: 4em;
+        text-align: center;
     }
     .seemore:hover {
         color: $secondary;
@@ -45,23 +57,42 @@
         grid-template-columns: auto auto;
         grid-gap: 10px;
         padding: 10px;
-        img {
+        img, p {
             text-align: center;
             font-size: 30px;
             width: 100%;
         }
+        img:hover {
+            cursor: pointer;
+        }
     }
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
     .individual-section {
         width: 100%;
         height: 100%;
         color: $primary;
         margin: 0 auto;
         display: block;
+        .title-display {
+            margin-left: 1em;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            align-content: flex-start;
+            align-items: flex-start;
+            .work-title {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.8em;
+            }
+            .work-name {
+                font-size: 0.8em;
+            }
+        }
         .work-grid-container {
-            margin-top: 3em;
+            margin-top: 1em;
             width: 100%;
             display: grid;
             grid-template-columns: auto;
@@ -74,4 +105,29 @@
             }
         }
     }
+}
+
+.popup {
+    position:absolute;
+    z-index:2;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s ease;
+}
+
+.show-popup .popup {
+    opacity:1;
+    visibility: visible;    
+}
+
+.popup > iframe {
+    position:absolute;
+    top:50px;
+    left:50%;
+    margin-left:-280px;
 }

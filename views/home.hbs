@@ -6,7 +6,7 @@
             <a href='/producer'><p id='producer'>Producer</p></a>
             <a href='/editor'><p id='editor'>Editor</p></a>
             <a href='/photographer'><p id='photographer'>Photographer</p></a>
-            <a href='/contact'><p>Contact</p></a>
+            <a href='/contact'><p id='contact'>Contact</p></a>
         </div>
     </div>  
 </div>
@@ -15,13 +15,14 @@
     if (document.body.clientWidth > 769) {
         document.getElementById('director').onmouseover=function(){hoverBg('bg2.jpg');};
         document.getElementById('director').onmouseout=function(){leaveBg('bg2.jpg');};   
-        document.getElementById('producer').onmouseover=function(){hoverBg('bg3.jpg');};
-        document.getElementById('producer').onmouseout=function(){leaveBg('bg3.jpg');};   
-        document.getElementById('editor').onmouseover=function(){hoverBg('bg1.jpg');};
-        document.getElementById('editor').onmouseout=function(){leaveBg('bg1.jpg');};    
+        document.getElementById('producer').onmouseover=function(){hoverBg('producer/prod1.jpg');};
+        document.getElementById('producer').onmouseout=function(){leaveBg('producer/prod1.jpg');};   
+        document.getElementById('editor').onmouseover=function(){hoverBg('editor/editor1.jpg');};
+        document.getElementById('editor').onmouseout=function(){leaveBg('editor/editor1.jpg');};    
         document.getElementById('photographer').onmouseover=function(){hoverBg('bg4.jpg');};
-        document.getElementById('photographer').onmouseout=function(){leaveBg('bg4.jpg');};   
-
+        document.getElementById('photographer').onmouseout=function(){leaveBg('bg4.jpg');}; 
+        document.getElementById('contact').onmouseover=function(){hoverBg('b1.jpg');};   
+        document.getElementById('contact').onmouseout=function(){leaveBg('b1.jpg');};   
         const hoverBg = (bg) => {
             document.getElementById('landing').style.background = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/${bg}')`;
         }

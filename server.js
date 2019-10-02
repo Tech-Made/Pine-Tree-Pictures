@@ -40,9 +40,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // routers
 const pagesRouter = require('./controllers/pages');
-// const emailRouter = require('./controllers/emails');
+const emailRouter = require('./controllers/emails');
 app.use(pagesRouter);
-// app.use(emailRouter);
+app.use(emailRouter);
 
 app.listen(port, () =>{
     console.log(`Pine Tree Pictures | Server is listening on ${port} 📸`);
