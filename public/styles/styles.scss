@@ -19,3 +19,32 @@ button:focus {
 .logo {
     font-family: $titlefont;
 }
+
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    margin-top: -8px;
+}
+
+    .close:hover,
+    .close:focus {
+    color: #1F3822;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: black;
+    padding: 1em;
+    height: 80%;
+}
+
+.inner-modal-content {
+
+}

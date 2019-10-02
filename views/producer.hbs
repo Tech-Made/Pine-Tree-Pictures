@@ -51,8 +51,10 @@
 <!-- The Modal 1 -->
 <center>
     <div id="videoWrapper" class="modal">
-        <span class="close"></span>
-        <iframe id='videoframe' width="80%" height="80%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class='modal-content'>
+            <span class="close">X</span>
+            <iframe id='videoframe' width="80%" height="80%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 </center>
 
@@ -318,7 +320,6 @@
 
 
     $('#seemore').click(() => {
-        console.log('here')
         btn5.classList.remove('hidden');
         btn6.classList.remove('hidden');
         btn7.classList.remove('hidden');
@@ -363,6 +364,11 @@
     btn8.onclick = function() {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/oOWBsmgjmPo';
+    }
+
+    span.onclick = function() {
+        document.getElementById('videoframe').src = '';
+        modal.style.display = "none";
     }
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {

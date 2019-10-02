@@ -48,7 +48,8 @@
 <!-- The Modal 1 -->
 <center>
     <div id="videoWrapper" class="modal">
-        <span class="close"></span>
+        <div class='modal-content'>
+        <span class="close">X</span>
         <iframe id='videoframe' width="80%" height="80%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </center>
@@ -311,14 +312,10 @@
     var btn5 = document.getElementById("videoFive");
     var btn6 = document.getElementById("videoSix");
 
-
     $('#seemore').click(() => {
-        console.log('here')
         btn5.classList.remove('hidden');
         btn6.classList.remove('hidden');
     });
-
-
 
     // unused.. Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -347,6 +344,11 @@
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
     }
+    span.onclick = function() {
+        document.getElementById('videoframe').src = '';
+        modal.style.display = "none";
+    };
+    
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
