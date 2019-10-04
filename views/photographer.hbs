@@ -33,13 +33,30 @@
             <h2 class='work-title'>Photographer <span class='work-name'>Daniel Prakopcyk</span></h2>
         </div>
         <div id='workGridContainer' class="work-grid-container">
-            <img id='videoOne' class="bg" src='/images/editor/editor1.jpg'></img>
-            <img id='videoTwo' class="bg" src='/images/editor/editor2.jpg'></img>
-            <img id='videoThree' class="bg" src='/images/editor/editor3.jpg'></img>
-            <img id='videoFour' class="bg" src='/images/editor/editor4.jpg'></img>
-
-            <img id='videoFive' class="bg hidden" src='/images/editor/editor5.jpg'></img>
-            <img id='videoSix' class="bg hidden" src='/images/editor/editor6.jpg'></img>
+            <div id='videoOne' class="image-container">
+                <img id='videoOne' class="bg" src='/images/editor/editor1.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoTwo' class="image-container">
+                <img id='videoTwo' class="bg" src='/images/editor/editor2.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoThree' class="image-container">
+                <img id='videoThree' class="bg" src='/images/editor/editor3.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoThree' class="image-container">
+                <img id='videoFour' class="bg" src='/images/editor/editor4.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
             </a>
         </div>
         <p id='seemore' class='seemore'>__See More__</p>
@@ -280,6 +297,7 @@
     }
     .hidden {
         display: none;
+        visibility: hidden;
     }
     * {
         box-sizing: border-box;
@@ -348,7 +366,7 @@
         document.getElementById('videoframe').src = '';
         modal.style.display = "none";
     };
-    
+
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {

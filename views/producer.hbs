@@ -33,15 +33,54 @@
             <h2 class='work-title'>Producer <span class='work-name'>Aiden Magarian</span></h2>
         </div>
         <div id='workGridContainer' class="work-grid-container">
-            <img id='videoOne' class="bg" src='/images/bg1.jpg'></img>
-            <img id='videoTwo' class="bg" src='/images/producer/prod2.jpg'></img>
-            <img id='videoThree' class="bg" src='/images/producer/prod3.jpg'></img>
-            <img id='videoFour' class="bg" src='/images/producer/prod4.jpg'></img>
-
-            <img id='videoFive' class="bg hidden" src='/images/bg1.jpg'></img>
-            <img id='videoSix' class="bg hidden" src='/images/producer/prod2.jpg'></img>
-            <img id='videoSeven' class="bg hidden" src='/images/producer/prod3.jpg'></img>
-            <img id='videoEight' class="bg hidden" src='/images/producer/prod4.jpg'></img>
+            <div id='videoOne' class="image-container">
+                <img id='videoOne' class="bg" src='/images/producer/prod1.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoTwo' class="image-container">
+                <img id='videoTwo' class="bg" src='/images/producer/prod2.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoThree' class="image-container">
+                <img id='videoThree' class="bg" src='/images/producer/prod3.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoFour' class="image-container">
+                <img id='videoFour' class="bg" src='/images/producer/prod4.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoFive' class="image-container hidden">
+                <img id='videoFive' class="bg" src='/images/bg1.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoSix' class="image-container hidden">
+                <img id='videoSix' class="bg" src='/images/producer/prod2.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoSeven' class="image-container hidden">
+            <img id='videoSeven' class="bg" src='/images/producer/prod3.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoOne' class="image-container hidden">
+            <img id='videoEight' class="bg" src='/images/producer/prod4.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
 
             </a>
         </div>
@@ -284,6 +323,7 @@
     }
     .hidden {
         display: none;
+        visibility: hidden;
     }
     * {
         box-sizing: border-box;

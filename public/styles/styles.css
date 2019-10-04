@@ -408,9 +408,38 @@ a {
   text-align: center;
   font-size: 30px;
   width: 100%;
+  font-family: "DINCondensed-Bold", serif;
+  letter-spacing: 1px;
 }
-.individual-section .work-grid-container img:hover {
-  cursor: pointer;
+.individual-section .work-grid-container .video-title {
+  font-family: "DINCondensed-Bold", serif !important;
+}
+.individual-section .work-grid-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(12, 12, 12, 0.548);
+}
+.individual-section .work-grid-container .image-container:hover .overlay {
+  opacity: 1;
+}
+.individual-section .work-grid-container .textOverlay {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .popup {
@@ -440,6 +469,24 @@ a {
 
 iframe {
   height: 100%;
+}
+
+.bg {
+  width: 100%;
+  display: block;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 768px) {

@@ -1,7 +1,7 @@
 
 <nav class="navbar">
     <input type='checkbox' id='nav' class='hidden'>
-    <label for="nav" class="nav-btn">
+    <label for="nav" id='navBtn' class="nav-btn">
         <i></i>
         <i></i>
         <i></i>
@@ -10,12 +10,12 @@
     <div class="nav-wrapper">
         <ul>
             <div>
-                <li><a class="header-text hover" href='/'><p>Home</p></a></li>
-                <li><a class="header-text active" href='/director'><p>Director</p></a></li>
-                <li><a class="header-text hover" href='/producer'><p>Producer</p></a></li>
-                <li><a class="header-text hover" href='/editor'><p>Editor</p></a></li>
-                <li><a class="header-text hover" href='/photographer'><p>Photographer</p></a></li>
-                <li><a class="header-text hover" href='/contact'><p>Contact</p></a></li>
+                <li class='navLink'><a class="header-text hover" href='/'><p>Home</p></a></li>
+                <li class='navLink'><a class="header-text active" href='/director'><p>Director</p></a></li>
+                <li class='navLink'><a class="header-text hover" href='/producer'><p>Producer</p></a></li>
+                <li class='navLink'><a class="header-text hover" href='/editor'><p>Editor</p></a></li>
+                <li class='navLink'><a class="header-text hover" href='/photographer'><p>Photographer</p></a></li>
+                <li class='navLink'><a class="header-text hover" href='/contact'><p>Contact</p></a></li>
             </div>
             <div>
                 {{!-- <a target='_onblank' href='https://www.linkedin.com/in/zaidiasim/'><i class="icon hover fab fa-linkedin"></i></a>
@@ -33,17 +33,54 @@
             <h2 class='work-title'>Director <span class='work-name'>Bobby Hanaford</span></h2>
         </div>
         <div id='workGridContainer' class="work-grid-container">
-            <img id='videoOne' class="bg" src='/images/bg1.jpg'></img>
-            <img id='videoTwo' class="bg" src='/images/producer/prod2.jpg'></img>
-            <img id='videoThree' class="bg" src='/images/producer/prod3.jpg'></img>
-            <img id='videoFour' class="bg" src='/images/producer/prod4.jpg'></img>
-
-            <img id='videoFive' class="bg hidden" src='/images/bg1.jpg'></img>
-            <img id='videoSix' class="bg hidden" src='/images/producer/prod2.jpg'></img>
-            <img id='videoSeven' class="bg hidden" src='/images/producer/prod3.jpg'></img>
-            <img id='videoEight' class="bg hidden" src='/images/producer/prod4.jpg'></img>
-
-            </a>
+            <div id='videoOne' class="image-container">
+                <img class="bg" src='/images/bg1.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoTwo' class="image-container">
+                <img class="bg" src='/images/producer/prod2.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>                
+            </div>
+            <div id='videoThree' class="image-container">
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+                <img class="bg" src='/images/producer/prod3.jpg'></img>
+            </div>
+            <div id='videoFour' class="image-container">
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>   
+                <img class="bg" src='/images/producer/prod4.jpg'></img>
+            </div>
+            <div id='videoFive' class="image-container hidden">
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+                <img class="bg" src='/images/bg1.jpg'></img>
+            </div>
+            <div id='videoSix' class="image-container hidden">
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+                <img class="bg" src='/images/producer/prod2.jpg'></img>                
+            </div>
+            <div id='videoSeven' class="image-container hidden">
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+                <img class="bg" src='/images/producer/prod3.jpg'></img>                             
+            </div>
+            <div id='videoEight' class="image-container hidden">
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+                <img class="bg" src='/images/producer/prod4.jpg'></img>
+            </div>
         </div>
         <p id='seemore' class='seemore'>__See More__</p>
 </div>
@@ -179,6 +216,7 @@
             transition: all 0.2s ease;
         }
         .nav-wrapper ul {
+            z-index: -1;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -188,11 +226,14 @@
             display: block;
         }
         nav ul li {
-            display: block;
             float: none;
             width: 100%;
             text-align: right;
             margin-bottom: 10px;
+        }
+        .navLink {
+            display: none;
+            visibility: hidden;
         }
         .nav-wrapper ul li:nth-child(1) a  {  
             transition-delay: 0.2s;        
@@ -283,6 +324,7 @@
     }
     .hidden {
         display: none;
+        visibility: hidden;
     }
     * {
         box-sizing: border-box;
@@ -301,8 +343,16 @@
 </style>
 
 <script>
+	const navBtn = document.getElementById('navBtn');
+    navBtn.onclick = function() {
+        const cols = document.getElementsByClassName('navLink');
+        for(i = 0; i < cols.length; i++) {
+            cols[i].style.display = 'block';
+            cols[i].style.visibility = 'initial';
+        }
+    }
     // Get the modal
-    var modal = document.getElementById("videoWrapper");
+    const modal = document.getElementById("videoWrapper");
 
     // Get the button that opens the modal
     var workGridContainer = document.getElementById("workGridContainer");
@@ -367,6 +417,7 @@
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
+            console.log('true')
             modal.style.display = "none";
             document.getElementById('videoframe').src = '';
         }

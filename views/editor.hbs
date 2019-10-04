@@ -33,13 +33,42 @@
             <h2 class='work-title'>Editor <span class='work-name'>Cal Laird</span></h2>
         </div>
         <div id='workGridContainer' class="work-grid-container">
+            <div id='videoOne' class="image-container">
             <img id='videoOne' class="bg" src='/images/editor/editor1.jpg'></img>
-            <img id='videoTwo' class="bg" src='/images/editor/editor2.jpg'></img>
-            <img id='videoThree' class="bg" src='/images/editor/editor3.jpg'></img>
-            <img id='videoFour' class="bg" src='/images/editor/editor4.jpg'></img>
-
-            <img id='videoFive' class="bg hidden" src='/images/editor/editor5.jpg'></img>
-            <img id='videoSix' class="bg hidden" src='/images/editor/editor6.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoTwo' class="image-container">
+                <img id='videoTwo' class="bg" src='/images/editor/editor2.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoThree' class="image-container">
+                <img id='videoThree' class="bg" src='/images/editor/editor3.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoFour' class="image-container">
+                <img id='videoFour' class="bg" src='/images/editor/editor4.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoFive' class="image-container hidden">
+                <img id='videoFive' class="bg" src='/images/editor/editor5.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
+            <div id='videoSix' class="image-container hidden">
+                <img id='videoSix' class="bg" src='/images/editor/editor6.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                </div>
+            </div>
             </a>
         </div>
         <p id='seemore' class='seemore'>__See More__</p>
@@ -281,6 +310,7 @@
     }
     .hidden {
         display: none;
+        visibility: hidden;
     }
     * {
         box-sizing: border-box;
@@ -299,13 +329,19 @@
 </style>
 
 <script>
+	const navBtn = document.getElementById('navBtn');
+    navBtn.onclick = function() {
+        const cols = document.getElementsByClassName('navLink');
+        for(i = 0; i < cols.length; i++) {
+            cols[i].style.display = 'block';
+            cols[i].style.visibility = 'initial';
+        }
+    }
     // Get the modal
     var modal = document.getElementById("videoWrapper");
 
     // Get the button that opens the modal
     var workGridContainer = document.getElementById("workGridContainer");
-
-    var seemore = document.getElementById("seemore");
     var btn = document.getElementById("videoOne");
     var btn2 = document.getElementById("videoTwo");
     var btn3 = document.getElementById("videoThree");
@@ -314,16 +350,14 @@
     var btn6 = document.getElementById("videoSix");
 
 
+    var span = document.getElementsByClassName("close")[0];
+
     $('#seemore').click(() => {
-        console.log('here')
         btn5.classList.remove('hidden');
         btn6.classList.remove('hidden');
+        btn7.classList.remove('hidden');
+        btn8.classList.remove('hidden');
     });
-
-
-
-    // unused.. Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
