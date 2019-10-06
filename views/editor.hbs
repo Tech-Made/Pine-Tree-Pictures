@@ -35,43 +35,24 @@
         <div id='workGridContainer' class="work-grid-container">
             <div id='videoOne' class="image-container">
             <img id='videoOne' class="bg" src='/images/editor/editor1.jpg'></img>
-                <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
-                </div>
             </div>
             <div id='videoTwo' class="image-container">
                 <img id='videoTwo' class="bg" src='/images/editor/editor2.jpg'></img>
-                <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
-                </div>
             </div>
             <div id='videoThree' class="image-container">
                 <img id='videoThree' class="bg" src='/images/editor/editor3.jpg'></img>
-                <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
-                </div>
             </div>
             <div id='videoFour' class="image-container">
                 <img id='videoFour' class="bg" src='/images/editor/editor4.jpg'></img>
-                <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
-                </div>
             </div>
             <div id='videoFive' class="image-container hidden">
                 <img id='videoFive' class="bg" src='/images/editor/editor5.jpg'></img>
-                <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
-                </div>
             </div>
             <div id='videoSix' class="image-container hidden">
                 <img id='videoSix' class="bg" src='/images/editor/editor6.jpg'></img>
-                <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
-                </div>
             </div>
             </a>
         </div>
-        <p id='seemore' class='seemore'>__See More__</p>
 </div>
 
 <!-- The Modal 1 -->
@@ -337,52 +318,7 @@
             cols[i].style.visibility = 'initial';
         }
     }
-    // Get the modal
-    var modal = document.getElementById("videoWrapper");
 
-    // Get the button that opens the modal
-    var workGridContainer = document.getElementById("workGridContainer");
-    var btn = document.getElementById("videoOne");
-    var btn2 = document.getElementById("videoTwo");
-    var btn3 = document.getElementById("videoThree");
-    var btn4 = document.getElementById("videoFour");
-    var btn5 = document.getElementById("videoFive");
-    var btn6 = document.getElementById("videoSix");
-
-
-    var span = document.getElementsByClassName("close")[0];
-
-    $('#seemore').click(() => {
-        btn5.classList.remove('hidden');
-        btn6.classList.remove('hidden');
-        btn7.classList.remove('hidden');
-        btn8.classList.remove('hidden');
-    });
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/332082943';
-    }
-    btn2.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/310270361';
-    }
-    btn3.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/BxFk-6KppE4';
-    }
-    btn4.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/oOWBsmgjmPo';
-    }
-    btn5.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
-    }
-    btn6.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
-    }
     span.onclick = function() {
         document.getElementById('videoframe').src = '';
         modal.style.display = "none";

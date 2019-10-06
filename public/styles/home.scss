@@ -12,7 +12,7 @@ body, html {
     height: 100%;
     overflow: hidden;
     position: relative;
-    background: url(/images/b1.jpg) no-repeat center; 
+    background: url(/images/bg1.jpg) no-repeat center; 
     background-size: cover !important;
    -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -107,7 +107,11 @@ body, html {
 
 @media screen and (max-width: 768px) { /* Specific to this particular image */
     .landing {
-        animation: slide 10s infinite;
+        -webkit-animation: slide 16s infinite ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: slide 16s infinite ease-in-out; /* Firefox < 16 */
+         -ms-animation: slide 16s infinite ease-in-out; /* Internet Explorer */
+          -o-animation: slide 16s infinite ease-in-out; /* Opera < 12.1 */
+             animation: slide 16s infinite ease-in-out;
         .content {
             width: 100%;
             position: absolute;
@@ -140,10 +144,10 @@ body, html {
 
 @keyframes slide {
     0% {
-        background-image: url(/images/b1.jpg)
+        background-image: url(/images/bg1.jpg)
     }
     20% {
-        background-image: url(/images/bg1.jpg)
+        background-image: url(/images/bg2.jpg)
     }
     40% {
         background-image: url(/images/bg3.jpg)
@@ -152,9 +156,9 @@ body, html {
         background-image: url(/images/bg4.jpg)
     }
     80% {
-        background-image: url(/images/bg3.jpg)
+        background-image: url(/images/bg5.png)
     }
-    80% {
-        background-image: url(/images/editor/editor1.jpg)
+    100% {
+        background-image: url(/images/bg6.jpg)
     }
 }

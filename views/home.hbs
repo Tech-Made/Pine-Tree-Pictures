@@ -13,15 +13,25 @@
 
 <script>
     if (document.body.clientWidth > 769) {
-        document.getElementById('director').onmouseover=function(){hoverBg('director/direc.png');};
-        document.getElementById('producer').onmouseover=function(){hoverBg('producer/prod1.jpg');};
-        document.getElementById('editor').onmouseover=function(){hoverBg('editor/editor1.jpg');};
-        document.getElementById('photographer').onmouseover=function(){hoverBg('bg4.jpg');};
-        document.getElementById('contact').onmouseover=function(){hoverBg('bg2.jpg');};   
+        document.getElementById('director').onmouseover=function(){hoverBg('bg2.jpg');};
+        document.getElementById('director').onmouseleave=function(){hoverBg('bg1.jpg');};
+        document.getElementById('producer').onmouseover=function(){hoverBg('bg3.jpg');};
+        document.getElementById('producer').onmouseleave=function(){hoverBg('bg1.jpg');};
+        document.getElementById('editor').onmouseover=function(){hoverBg('bg4.jpg');};
+        document.getElementById('editor').onmouseleave=function(){hoverBg('bg1.jpg');};
+        document.getElementById('photographer').onmouseover=function(){hoverBg('bg5.png');};    
+        document.getElementById('photographer').onmouseleave=function(){hoverBg('bg1.jpg');};
+        document.getElementById('contact').onmouseover=function(){hoverBg('bg6.jpg');};   
+        document.getElementById('contact').onmouseleave=function(){hoverBg('bg1.jpg');};
         const hoverBg = (bg) => {
             document.getElementById('landing').style.background = `url('/images/${bg}')`;
         }
     }
 </script>
+{{!-- need too figure out image background hover link change bg with a fade --}}
+{{!-- Ideas --}}
+{{!-- Use jQuery function to fade in new bg img --}}
+{{!-- find css property to change bg slowly...? --}}
+{{!-- otherwise idk stackoverflow! --}}
 {{!-- document.getElementById("landing").style.animation = "fadein 1.6s 1"; --}}
 {{!-- document.getElementById("landing").style.animation = "fadein 5s 1"; --}}
