@@ -61,15 +61,15 @@
                 <div class='overlay'>
                     <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
                 </div>
-                <img class="bg" src='/images/bg1.jpg'></img>
+                <img class="bg" src='/images/director/direc1.png'></img>
             </div>
             <div id='videoSix' class="image-container hidden">
                 <div class='overlay'>
                     <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
                 </div>
-                <img class="bg" src='/images/producer/prod2.jpg'></img>                
+                <img class="bg" src='/images/bg2.jpg'></img>                
             </div>
-            <div id='videoSeven' class="image-container hidden">
+            {{!-- <div id='videoSeven' class="image-container hidden">
                 <div class='overlay'>
                     <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
                 </div>
@@ -80,7 +80,7 @@
                     <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
                 </div>
                 <img class="bg" src='/images/producer/prod4.jpg'></img>
-            </div>
+            </div> --}}
         </div>
         <p id='seemore' class='seemore'>__See More__</p>
 </div>
@@ -364,14 +364,11 @@
     var btn4 = document.getElementById("videoFour");
     var btn5 = document.getElementById("videoFive");
     var btn6 = document.getElementById("videoSix");
-    var btn7 = document.getElementById("videoSeven");
-    var btn8 = document.getElementById("videoEight");
+
 
     $('#seemore').click(() => {
         btn5.classList.remove('hidden');
         btn6.classList.remove('hidden');
-        btn7.classList.remove('hidden');
-        btn8.classList.remove('hidden');
     });
 
     // unused.. Get the <span> element that closes the modal
@@ -401,14 +398,6 @@
     btn6.onclick = function() {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
-    }
-    btn7.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
-    }
-    btn8.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/oOWBsmgjmPo';
     }
     span.onclick = function() {
         document.getElementById('videoframe').src = '';

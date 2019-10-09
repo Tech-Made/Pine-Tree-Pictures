@@ -34,15 +34,15 @@
         </div>
         <div id='workGridContainer' class="work-grid-container">
             <div id='videoOne' class="image-container">
-                <img id='videoOne' class="bg" src='/images/producer/prod1.jpg'></img>
+                <img id='videoOne' class="bg" src='/images/producer/prod5.jpg'></img>
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">YUNGBLUD<br/><span class="video-title">Parents</span></p>
+                    <p id='textOverlay' class="centered artist-title">KIA<br/><span class="video-title">Give It Everything</span></p>
                 </div>
             </div>
             <div id='videoTwo' class="image-container">
-                <img id='videoTwo' class="bg" src='/images/producer/prod2.jpg'></img>
+                <img id='videoTwo' class="bg" src='/images/producer/prod6.png'></img>
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Steve Aoki & Backstreet Boys<br/><span class="video-title">Let It Be Me</span></p>
+                    <p id='textOverlay' class="centered artist-title">Tayla Parx<br/><span class="video-title">We Need to Talk / Spotify</span></p>
                 </div>
             </div>
             <div id='videoThree' class="image-container">
@@ -69,19 +69,6 @@
                     <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
                 </div>
             </div>
-            <div id='videoSeven' class="image-container hidden">
-            <img id='videoSeven' class="bg" src='/images/producer/prod3.jpg'></img>
-                <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
-                </div>
-            </div>
-            <div id='videoOne' class="image-container hidden">
-            <img id='videoEight' class="bg" src='/images/producer/prod4.jpg'></img>
-                <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
-                </div>
-            </div>
-
             </a>
         </div>
         <p id='seemore' class='seemore'>__See More__</p>
@@ -355,15 +342,10 @@
     var btn4 = document.getElementById("videoFour");
     var btn5 = document.getElementById("videoFive");
     var btn6 = document.getElementById("videoSix");
-    var btn7 = document.getElementById("videoSeven");
-    var btn8 = document.getElementById("videoEight");
-
 
     $('#seemore').click(() => {
         btn5.classList.remove('hidden');
         btn6.classList.remove('hidden');
-        btn7.classList.remove('hidden');
-        btn8.classList.remove('hidden');
     });
 
 
@@ -375,11 +357,11 @@
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
+        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/337630607?color=fafafa&title=0&byline=0&portrait=0';
     }
     btn2.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
+        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/334713501?color=5c5a5a&title=0&byline=0&portrait=0';
     }
     btn3.onclick = function() {
         modal.style.display = "block";
@@ -391,19 +373,11 @@
     }
     btn5.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/oOWBsmgjmPo';
     }
     btn6.onclick = function() {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
-    }
-    btn7.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
-    }
-    btn8.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/oOWBsmgjmPo';
     }
 
     span.onclick = function() {

@@ -1,43 +1,45 @@
-<nav class="navbar">
-    <input type='checkbox' id='nav' class='hidden'>
-    <label for="nav" class="nav-btn">
-        <i></i>
-        <i></i>
-        <i></i>
-    </label>
-    <a href='/' ><p class="logo hoveronly">PINE TREE PICTURES</p></a>
-    <div class="nav-wrapper">
-        <ul>
-            <div>
-                <li><a class="header-text hover" href='/'><p>Home</p></a></li>
-                <li><a class="header-text hover" href='/director'><p>Director</p></a></li>
-                <li><a class="header-text hover" href='/producer'><p>Producer</p></a></li>
-                <li><a class="header-text hover" href='/editor'><p>Editor</p></a></li>
-                <li><a class="header-text hover" href='/photographer'><p>Photographer</p></a></li>
-                <li><a class="header-text active" href='/contact'><p>Contact</p></a></li>
-            </div>
-            <div>
-                {{!-- <a target='_onblank' href='https://www.linkedin.com/in/zaidiasim/'><i class="icon hover fab fa-linkedin"></i></a>
-                <a target='_onblank' href='https://github.com/awesomezaidi'><i class="icon hover fab fa-github"></i></a>
-                <a target='_onblank' href='https://medium.com/@asimzaidi'><i class="icon hover fab fa-medium"></i></a>
-                <a target='_onblank' href="mailto:asimzaidih@gmail.com"><i class="icon hover fas fa-envelope"></i></a> --}}
-            </div>
-        </ul>
-    </div>
-</nav>
-
 <div class='contact-page'>
-    <p class="write-us">Write Us</p>
+    <nav class="navbar">
+        <input type='checkbox' id='nav' class='hidden'>
+        <label for="nav" class="nav-btn">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+        <a href='/' ><p class="logo hoveronly">PINE TREE PICTURES</p></a>
+        <div class="nav-wrapper">
+            <ul>
+                <div>
+                    <li><a class="header-text hover" href='/'><p>Home</p></a></li>
+                    <li><a class="header-text hover" href='/director'><p>Director</p></a></li>
+                    <li><a class="header-text hover" href='/producer'><p>Producer</p></a></li>
+                    <li><a class="header-text hover" href='/editor'><p>Editor</p></a></li>
+                    <li><a class="header-text hover" href='/photographer'><p>Photographer</p></a></li>
+                    <li><a class="header-text active" href='/contact'><p>Contact</p></a></li>
+                </div>
+                <div>
+                    {{!-- <a target='_onblank' href='https://www.linkedin.com/in/zaidiasim/'><i class="icon hover fab fa-linkedin"></i></a>
+                    <a target='_onblank' href='https://github.com/awesomezaidi'><i class="icon hover fab fa-github"></i></a>
+                    <a target='_onblank' href='https://medium.com/@asimzaidi'><i class="icon hover fab fa-medium"></i></a>
+                    <a target='_onblank' href="mailto:asimzaidih@gmail.com"><i class="icon hover fas fa-envelope"></i></a> --}}
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="write-us">
+            <p>Write Us</p>
+        </div>
 
-    <form class="contact-form" method="POST" action="/contact">
-        <input type='text' name='name' placeholder="Your Name"></input>
-        <input type='email' name='email' placeholder="Your Email"></input>
-        <input type='text' name='phone' placeholder="Your Number"></input>
-        <input type='text' name='message' placeholder="Your Message"></input>
-        <button id='sendButton' type='submit' class="btn_primary">Send</button>
-    </form>
+        <form class="contact-form" method="POST" action="/contact">
+            <input type='text' name='name' placeholder="Your Name"></input>
+            <input type='email' name='email' placeholder="Your Email"></input>
+            <input type='text' name='phone' placeholder="Your Number"></input>
+            <input type='text' name='message' placeholder="Your Message"></input>
+            <button id='sendButton' type='submit' class="btn_primary">Send</button>
+        </form>
+    </div>
 </div>
-
 
 <style>
     nav {
