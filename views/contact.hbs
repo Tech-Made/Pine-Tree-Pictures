@@ -32,11 +32,11 @@
         </div>
 
         <form class="contact-form" method="POST" action="/contact">
-            <input type='text' name='name' placeholder="Your Name"></input>
-            <input type='email' name='email' placeholder="Your Email"></input>
-            <input type='text' name='phone' placeholder="Your Number"></input>
-            <input type='text' name='message' placeholder="Your Message"></input>
-            <button id='sendButton' type='submit' class="btn_primary">Send</button>
+            <input type='text' id='name' name='name' placeholder="Your Name"></input>
+            <input type='email' id='email' name='email' placeholder="Your Email"></input>
+            <input type='text' id='phone' name='phone' placeholder="Your Number"></input>
+            <input type='text' id='message' name='message' placeholder="Your Message"></input>
+            <button id='contact_form_submit' type='button' class="btn_primary">Send</button>
         </form>
     </div>
 </div>
@@ -269,13 +269,33 @@
     }
 </style>
 
-
-<script>
-    document.getElementById("sendButton").addEventListener("click", function(event){
+    {{!-- document.getElementById("sendButton").addEventListener("click", function(event){
         event.preventDefault();
     });
     $("#sendButton").click(function() {
         $("#sendButton").html('Contacted.');
         $("#sendButton").prop("disabled", true);
+    }); --}}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    document.getElementById("contact_form_submit").addEventListener("click", function(event){
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        axios.post('/contact', {
+                name: name,
+                email: email,
+                phone: phone,
+                message: message
+            }).then(res => {
+                $("#contact_form_submit").html('Contacted!');
+                $("#contact_form_submit").prop("disabled", true);
+            }).catch(error => {
+                console.error(error);
+                $("#contact_form_submit").html('Something Went Wrong! Try again later.');
+            });
     });
 </script>

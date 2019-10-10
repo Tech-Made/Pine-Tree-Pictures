@@ -34,53 +34,53 @@
         </div>
         <div id='workGridContainer' class="work-grid-container">
             <div id='videoOne' class="image-container">
-                <img class="bg" src='/images/bg1.jpg'></img>
+                <img class="bg" src='/images/director/direc1.jpg'></img>
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                    <p id='textOverlay' class="centered artist-title">Vic Mensa<br/><span class="video-title">Dark Things</span></p>
                 </div>
             </div>
             <div id='videoTwo' class="image-container">
-                <img class="bg" src='/images/producer/prod2.jpg'></img>
+                <img class="bg" src='/images/director/direc2.jpeg'></img>
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Steve Aoki & Backstreet Boys<br/><span class="video-title">Let It Be Me</span></p>
+                    <p id='textOverlay' class="centered artist-title">Greyson Chance<br/><span class="video-title">White Roses</span></p>
                 </div>                
             </div>
             <div id='videoThree' class="image-container">
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Wiz Khalifa<br/><span class="video-title">Alright ft. Trippie Redd & Preme</span></p>
+                    <p id='textOverlay' class="centered artist-title">Call Me Karizma<br/><span class="video-title">Rebels</span></p>
                 </div>
-                <img class="bg" src='/images/producer/prod3.jpg'></img>
+                <img class="bg" src='/images/director/direc3.jpg'></img>
             </div>
             <div id='videoFour' class="image-container">
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">YUNGBLOOD<br/><span class="video-title">Parents</span></p>
-                </div>   
-                <img class="bg" src='/images/producer/prod4.jpg'></img>
+                    <p id='textOverlay' class="centered artist-title">Rich the Kid x Miguel x TY$<br/><span class="video-title">Woah</span></p>
+                </div>
+                <img class="bg" src='/images/director/direc4.png'></img>
             </div>
             <div id='videoFive' class="image-container hidden">
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                    <p id='textOverlay' class="centered artist-title">Dram x Trippie Redd<br/><span class="video-title">Ill Nana</span></p>
                 </div>
-                <img class="bg" src='/images/director/direc1.png'></img>
+                <img class="bg" src='/images/director/direc5.png'></img>
             </div>
             <div id='videoSix' class="image-container hidden">
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                    <p id='textOverlay' class="centered artist-title">Vic Mensa<br/><span class="video-title">Metaphysical</span></p>
                 </div>
                 <img class="bg" src='/images/bg2.jpg'></img>                
             </div>
-            {{!-- <div id='videoSeven' class="image-container hidden">
+            <div id='videoSeven' class="image-container hidden">
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                    <p id='textOverlay' class="centered artist-title">Witt Lowry x Ava Max<br/><span class="video-title">Into Your Arms</span></p>
                 </div>
-                <img class="bg" src='/images/producer/prod3.jpg'></img>                             
-            </div>
+                <img class="bg" src='/images/director/direc7.jpg'></img>                             
+            </div> 
             <div id='videoEight' class="image-container hidden">
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">Artist Name<br/><span class="video-title">Video Title</span></p>
+                    <p id='textOverlay' class="centered artist-title">Gashi x G-Eazy<br/><span class="video-title">My Year</span></p>
                 </div>
-                <img class="bg" src='/images/producer/prod4.jpg'></img>
-            </div> --}}
+                <img class="bg" src='/images/director/direc8.png'></img>
+            </div>
         </div>
         <p id='seemore' class='seemore'>__See More__</p>
 </div>
@@ -364,11 +364,15 @@
     var btn4 = document.getElementById("videoFour");
     var btn5 = document.getElementById("videoFive");
     var btn6 = document.getElementById("videoSix");
+    var btn7 = document.getElementById("videoSeven");
+    var btn8 = document.getElementById("videoEight");
 
 
     $('#seemore').click(() => {
         btn5.classList.remove('hidden');
         btn6.classList.remove('hidden');
+        btn7.classList.remove('hidden');
+        btn8.classList.remove('hidden');
     });
 
     // unused.. Get the <span> element that closes the modal
@@ -377,27 +381,35 @@
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/56-drfTY8Yw';
     }
     btn2.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/PRv2NaPZDoU';
     }
     btn3.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/udLA_rwpCP8';
     }
     btn4.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/oOWBsmgjmPo';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/pA2ATChYnJI';
     }
     btn5.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/HLuQbbMnlK4';
     }
     btn6.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
+        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/286924628?app_id=122963&wmode=opaque&autoplay=1';
+    }
+    btn7.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/h3YXec5gJi0';
+    }
+    btn8.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/LYWXPn4zZxs';
     }
     span.onclick = function() {
         document.getElementById('videoframe').src = '';
