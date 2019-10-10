@@ -35,6 +35,9 @@
         <div id='workGridContainer' class="work-grid-container">
             <div id='videoOne' class="image-container">
                 <img class="bg" src='/images/editor/editor1.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">JEEP<br/><span class="video-title">The Unknown</span></p>
+                </div>
             </div>
             <div id='videoTwo' class="image-container">
                 <img id='videoTwo' class="bg" src='/images/editor/editor2.jpg'></img>
@@ -45,11 +48,14 @@
             <div id='videoThree' class="image-container">
                 <img id='videoThree' class="bg" src='/images/editor/editor3.jpg'></img>
                 <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title">ScHoolboy Q<br/><span class="video-title">ies (feat.Ty Dolla $ign and YG)</span></p>
+                    <p id='textOverlay' class="centered artist-title">ScHoolboy Q<br/><span class="video-title">Lies (feat.Ty Dolla $ign and YG)</span></p>
                 </div>
             </div>
             <div id='videoFour' class="image-container">
                 <img id='videoFour' class="bg" src='/images/editor/editor4.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Social House<br/><span class="video-title">Haunt You</span></p>
+                </div>
             </div>
             <div id='videoFive' class="image-container hidden">
                 <img id='videoFive' class="bg" src='/images/editor/editor5.jpg'></img>
@@ -331,6 +337,7 @@
     var btn = document.getElementById("videoOne");
     var btn2 = document.getElementById("videoTwo");
     var btn3 = document.getElementById("videoThree");
+    var btn4 = document.getElementById("videoFour");
 
 
     btn.onclick = function() {
@@ -345,6 +352,10 @@
     btn3.onclick = function() {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/BxFk-6KppE4';
+    }
+    btn4.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ZoiL_My3RV0';
     }
     span.onclick = function() {
         document.getElementById('videoframe').src = '';

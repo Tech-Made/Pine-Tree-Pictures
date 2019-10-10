@@ -52,23 +52,23 @@
                 </div>
             </div>
             <div id='videoFour' class="image-container">
-                <img id='videoFour' class="bg" src='/images/bg1.jpg'></img>
-                <div class='overlay'>
-                    <p id='textOverlay' class="centered artist-title"><br/><span class="video-title">Video Title</span></p>
-                </div>
-            </div>
-            <div id='videoFive' class="image-container hidden">
-                <img id='videoFive' class="bg" src='/images/producer/prod4.jpg'></img>
+                <img id='videoFour' class="bg" src='/images/producer/prod4.jpg'></img>
                 <div class='overlay'>
                     <p id='textOverlay' class="centered artist-title">YUNGBLUD<br/><span class="video-title">Parents</span></p>
                 </div>
             </div>
-            <div id='videoSix' class="image-container hidden">
-                <img id='videoSix' class="bg" src='/images/producer/prod2.jpg'></img>
+            <div id='videoFive' class="image-container hidden">
+                <img id='videoFive' class="bg" src='/images/producer/prod2.jpg'></img>
                 <div class='overlay'>
                     <p id='textOverlay' class="centered artist-title">Steve Aoki & Backstreet Boys<br/><span class="video-title">Let It Be Me</span></p>
                 </div>
             </div>
+            {{!-- <div id='videoSix' class="image-container hidden">
+                <img id='videoSix' class="bg" src='/images/producer/prod2.jpg'></img>
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Steve Aoki & Backstreet Boys<br/><span class="video-title">Let It Be Me</span></p>
+                </div>
+            </div> --}}
             </a>
         </div>
         <p id='seemore' class='seemore'>__See More__</p>
@@ -341,11 +341,9 @@
     var btn3 = document.getElementById("videoThree");
     var btn4 = document.getElementById("videoFour");
     var btn5 = document.getElementById("videoFive");
-    var btn6 = document.getElementById("videoSix");
 
     $('#seemore').click(() => {
         btn5.classList.remove('hidden');
-        btn6.classList.remove('hidden');
     });
 
 
@@ -374,10 +372,6 @@
     btn5.onclick = function() {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/oOWBsmgjmPo';
-    }
-    btn6.onclick = function() {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
     }
 
     span.onclick = function() {
