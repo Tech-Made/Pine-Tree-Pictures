@@ -10,7 +10,7 @@ router.post('/contact', async (req, res) => {
     user.save();
     try {
         await sgMail.send({
-            to: 'asimzaidih@gmail.com',
+            to: 'bobby@pinetreepictures.com',
             from: data.email,
             subject: 'Pine Tree Pictures Site Contact Inquiry',
             html: `
