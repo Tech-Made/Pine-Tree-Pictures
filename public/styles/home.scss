@@ -14,9 +14,9 @@ body, html {
     position: relative;
     background: url(/images/bg1.jpg) no-repeat center; 
     background-size: cover !important;
-   -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover; 
+    -o-background-size: cover;
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 4s; /* Firefox < 16 */
      -ms-animation: fadein 4s; /* Internet Explorer */
