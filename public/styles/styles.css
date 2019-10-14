@@ -534,6 +534,21 @@ iframe {
     font-size: 30px;
     width: 100%;
   }
+  .individual-section .work-grid-container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(12, 12, 12, 0.173);
+  }
+  .individual-section .work-grid-container .image-container .overlay {
+    opacity: 1;
+  }
 }
 @font-face {
   font-family: "DINCondensed-Bold";
