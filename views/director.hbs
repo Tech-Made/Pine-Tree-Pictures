@@ -81,6 +81,18 @@
                 </div>
                 <img class="bg" src='/images/director/direc8.jpg'></img>
             </div>
+            <div id='videoNine' class="image-container hidden">
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">Walker County<br/><span class="video-title">The Hamptons</span></p>
+                </div>
+                <img class="bg" src='/images/director/direc9.jpg'></img>
+            </div>
+            <div id='videoTen' class="image-container hidden">
+                <div class='overlay'>
+                    <p id='textOverlay' class="centered artist-title">BabyJake<br/><span class="video-title">239</span></p>
+                </div>
+                <img class="bg" src='/images/director/direc10.jpg'></img>
+            </div>
         </div>
         <p id='seemore' class='seemore'>__See More__</p>
 </div>
@@ -366,13 +378,16 @@
     var btn6 = document.getElementById("videoSix");
     var btn7 = document.getElementById("videoSeven");
     var btn8 = document.getElementById("videoEight");
-
+    var btn9 = document.getElementById("videoNine");
+    var btn10 = document.getElementById("videoTen");
 
     $('#seemore').click(() => {
         btn5.classList.remove('hidden');
         btn6.classList.remove('hidden');
         btn7.classList.remove('hidden');
         btn8.classList.remove('hidden');
+        btn9.classList.remove('hidden');
+        btn10.classList.remove('hidden');
     });
 
     // unused.. Get the <span> element that closes the modal
@@ -410,6 +425,14 @@
     btn8.onclick = function() {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/LYWXPn4zZxs';
+    }
+    btn9.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/7kuq29YxqNg';
+    }
+    btn10.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/R3h8zO1uSpY';
     }
     span.onclick = function() {
         document.getElementById('videoframe').src = '';
