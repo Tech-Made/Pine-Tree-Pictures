@@ -243,7 +243,18 @@ body, html {
 }
 @media screen and (max-width: 768px) {
   /* Specific to this particular image */
-  .content {
+  .landing {
+    -webkit-animation: slide 16s infinite ease-in-out;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slide 16s infinite ease-in-out;
+    /* Firefox < 16 */
+    -ms-animation: slide 16s infinite ease-in-out;
+    /* Internet Explorer */
+    -o-animation: slide 16s infinite ease-in-out;
+    /* Opera < 12.1 */
+    animation: slide 16s infinite ease-in-out;
+  }
+  .landing .content {
     width: 100%;
     position: absolute;
     top: auto;
@@ -252,12 +263,12 @@ body, html {
     text-transform: uppercase;
     text-align: center;
   }
-  .content .home-title {
+  .landing .content .home-title {
     margin-top: 3em;
     font-size: 2em;
     letter-spacing: 1px;
   }
-  .content .menu {
+  .landing .content .menu {
     margin-top: 2em;
     display: flex;
     flex-direction: column;
@@ -265,7 +276,7 @@ body, html {
     align-items: center;
     justify-content: space-between;
   }
-  .content .menu p {
+  .landing .content .menu p {
     margin-top: 0.4em;
     margin-bottom: 0.4em;
     padding: 0;
