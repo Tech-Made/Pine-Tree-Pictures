@@ -17,11 +17,17 @@ body, html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 4s; /* Firefox < 16 */
-     -ms-animation: fadein 4s; /* Internet Explorer */
-      -o-animation: fadein 4s; /* Opera < 12.1 */
-         animation: fadein 4s;
+    // -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    // -moz-animation: fadein 4s; /* Firefox < 16 */
+    //  -ms-animation: fadein 4s; /* Internet Explorer */
+    //   -o-animation: fadein 4s; /* Opera < 12.1 */
+    //      animation: fadein 4s;
+        //  .landing {
+    -webkit-animation: slide 16s infinite ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slide 16s infinite ease-in-out; /* Firefox < 16 */
+        -ms-animation: slide 16s infinite ease-in-out; /* Internet Explorer */
+        -o-animation: slide 16s infinite ease-in-out; /* Opera < 12.1 */
+            animation: slide 16s infinite ease-in-out;
 }
 
 .content {
@@ -106,40 +112,40 @@ body, html {
 }
 
 @media screen and (max-width: 768px) { /* Specific to this particular image */
-    .landing {
-        -webkit-animation: slide 16s infinite ease-in-out; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: slide 16s infinite ease-in-out; /* Firefox < 16 */
-         -ms-animation: slide 16s infinite ease-in-out; /* Internet Explorer */
-          -o-animation: slide 16s infinite ease-in-out; /* Opera < 12.1 */
-             animation: slide 16s infinite ease-in-out;
-        .content {
-            width: 100%;
-            position: absolute;
-            top: auto;
-            left: auto;
-            transform: none;
-            text-transform: uppercase;
-            text-align: center;
-            .home-title {
-                margin-top: 3em;
-                font-size: 2em;
-                letter-spacing: 1px;
-            }
-            .menu {
-                margin-top: 2em;
-                display: flex;
-                flex-direction: column;
-                align-content: center;
-                align-items: center;
-                justify-content: space-between; 
-                p {
-                    margin-top: .4em;
-                    margin-bottom: .4em;
-                    padding: 0;
-                }        
-            }
+    // .landing {
+    //     -webkit-animation: slide 16s infinite ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+    //     -moz-animation: slide 16s infinite ease-in-out; /* Firefox < 16 */
+    //      -ms-animation: slide 16s infinite ease-in-out; /* Internet Explorer */
+    //       -o-animation: slide 16s infinite ease-in-out; /* Opera < 12.1 */
+    //          animation: slide 16s infinite ease-in-out;
+    .content {
+        width: 100%;
+        position: absolute;
+        top: auto;
+        left: auto;
+        transform: none;
+        text-transform: uppercase;
+        text-align: center;
+        .home-title {
+            margin-top: 3em;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+        .menu {
+            margin-top: 2em;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: space-between; 
+            p {
+                margin-top: .4em;
+                margin-bottom: .4em;
+                padding: 0;
+            }        
         }
     }
+    // }
 }
 
 @keyframes slide {

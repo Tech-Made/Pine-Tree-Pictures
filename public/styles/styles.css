@@ -127,15 +127,15 @@ body, html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  -webkit-animation: fadein 4s;
+  -webkit-animation: slide 16s infinite ease-in-out;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 4s;
+  -moz-animation: slide 16s infinite ease-in-out;
   /* Firefox < 16 */
-  -ms-animation: fadein 4s;
+  -ms-animation: slide 16s infinite ease-in-out;
   /* Internet Explorer */
-  -o-animation: fadein 4s;
+  -o-animation: slide 16s infinite ease-in-out;
   /* Opera < 12.1 */
-  animation: fadein 4s;
+  animation: slide 16s infinite ease-in-out;
 }
 
 .content {
@@ -243,18 +243,7 @@ body, html {
 }
 @media screen and (max-width: 768px) {
   /* Specific to this particular image */
-  .landing {
-    -webkit-animation: slide 16s infinite ease-in-out;
-    /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: slide 16s infinite ease-in-out;
-    /* Firefox < 16 */
-    -ms-animation: slide 16s infinite ease-in-out;
-    /* Internet Explorer */
-    -o-animation: slide 16s infinite ease-in-out;
-    /* Opera < 12.1 */
-    animation: slide 16s infinite ease-in-out;
-  }
-  .landing .content {
+  .content {
     width: 100%;
     position: absolute;
     top: auto;
@@ -263,12 +252,12 @@ body, html {
     text-transform: uppercase;
     text-align: center;
   }
-  .landing .content .home-title {
+  .content .home-title {
     margin-top: 3em;
     font-size: 2em;
     letter-spacing: 1px;
   }
-  .landing .content .menu {
+  .content .menu {
     margin-top: 2em;
     display: flex;
     flex-direction: column;
@@ -276,7 +265,7 @@ body, html {
     align-items: center;
     justify-content: space-between;
   }
-  .landing .content .menu p {
+  .content .menu p {
     margin-top: 0.4em;
     margin-bottom: 0.4em;
     padding: 0;
