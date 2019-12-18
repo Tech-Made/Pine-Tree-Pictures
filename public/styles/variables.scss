@@ -49,14 +49,15 @@ $titlefont: 'Sf-Prop-Display-Black', serif;
   color: rgb(101, 101, 101);
   font-size: 5px;
   margin-right: 2.4em;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  margin-bottom: -2px;
 }
 
 @media screen and (max-width: 768px) { 
   .dots {
     color: rgb(101, 101, 101);
     font-size: 5px;
-    margin-right: 2.4em;
+    margin-right: 0;
     letter-spacing: 1px;
     }
 }

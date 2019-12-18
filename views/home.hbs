@@ -1,37 +1,413 @@
+<div id="loading"></div>
+
 <div class='landing' id='landing'>
     <div class='content'>
         <h1 class='home-title'>PINE TREE PICTURES</h1>
         <div class="menu">
-            <a href='/director'><p id='director'>Director</p></a>
-            <a href='/producer'><p id='producer'>Producer</p></a>
-            <a href='/editor'><p id='editor'>Editor</p></a>
-            <a href='/photographer'><p id='photographer'>Photographer</p></a>
+            <a href='#director'><p>Director</p></a>
+            <a href='#producer'><p>Producer</p></a>
+            <a href='#editor'><p>Editor</p></a>
+            <a href='#photographer'><p>Photographer</p></a>
             <a href='/contact'><p id='contact'>Contact</p></a>
         </div>
     </div>  
 </div>
 
-{{!-- <script>
-    if (document.body.clientWidth > 769) {
-        document.getElementById('director').onmouseover=function(){hoverBg('bg66.jpg');};
-        document.getElementById('director').onmouseleave=function(){hoverBg('bg1.jpg');};
-        document.getElementById('producer').onmouseover=function(){hoverBg('bg3.jpg');};
-        document.getElementById('producer').onmouseleave=function(){hoverBg('bg1.jpg');};
-        document.getElementById('editor').onmouseover=function(){hoverBg('bg4.jpg');};
-        document.getElementById('editor').onmouseleave=function(){hoverBg('bg1.jpg');};
-        document.getElementById('photographer').onmouseover=function(){hoverBg('bg5.png');};    
-        document.getElementById('photographer').onmouseleave=function(){hoverBg('bg1.jpg');};
-        document.getElementById('contact').onmouseover=function(){hoverBg('bgnew.png');};   
-        document.getElementById('contact').onmouseleave=function(){hoverBg('bg1.jpg');};
-        const hoverBg = (bg) => {
-            document.getElementById('landing').style.background = `url('/images/${bg}')`;
+<div id='director' class="individual-section">
+    <div class="title-display">
+        <p class="dots">• • • • • • • • • • • • • • • • • </p>
+        <h2 class='work-title'>Director <span class='work-name'>Bobby Hanaford</span></h2>
+    </div>
+    <div id='workGridContainer' class="work-grid-container">
+
+        <div id='d_videoZero' class="image-container">
+            <img class="bg" src='/images/director/direc0.jpg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Marc E. Bassy<br/><span class="video-title">NASCAR</span></p>
+            </div>
+        </div>
+
+        <div id='d_videoOne' class="image-container">
+            <img class="bg" src='/images/director/direc1.jpg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Vic Mensa<br/><span class="video-title">Dark Things</span></p>
+            </div>
+        </div>
+        <div id='d_videoTwo' class="image-container">
+            <img class="bg" src='/images/director/direc2.jpeg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Greyson Chance<br/><span class="video-title">White Roses</span></p>
+            </div>                
+        </div>
+        <div id='d_videoThree' class="image-container">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Call Me Karizma<br/><span class="video-title">Rebels</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc3.jpg'></img>
+        </div>
+        <div id='d_videoFour' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Rich the Kid x Miguel x TY$<br/><span class="video-title">Woah</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc4.png'></img>
+        </div>
+        <div id='d_videoFive' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Dram x Trippie Redd<br/><span class="video-title">Ill Nana</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc5.png'></img>
+        </div>
+        <div id='d_videoSix' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Vic Mensa<br/><span class="video-title">Metaphysical</span></p>
+            </div>
+            <img class="bg" src='/images/bg2.jpg'></img>                
+        </div>
+        <div id='d_videoSeven' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Witt Lowry x Ava Max<br/><span class="video-title">Into Your Arms</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc7.jpg'></img>                             
+        </div> 
+        <div id='d_videoEight' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Gashi x G-Eazy<br/><span class="video-title">My Year</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc8.jpg'></img>
+        </div>
+        <div id='d_videoNine' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Walker County<br/><span class="video-title">The Hamptons</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc9.jpg'></img>
+        </div>
+        <div id='d_videoTen' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">BabyJake<br/><span class="video-title">239</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc10.jpg'></img>
+        </div>
+    </div>
+    <p id='directorSeemore' class='seemore'>__See More__</p>
+</div>
+
+<div id='producer' class="individual-section">
+    <div class="title-display">
+        <p class="dots">• • • • • • • • • • • • • • </p>
+        <h2 class='work-title'>Producer <span class='work-name'>Aiden Magarian</span></h2>
+    </div>
+    <div id='workGridContainer' class="work-grid-container">
+        <div id='p_videoOne' class="image-container">
+            <img class="bg" src='/images/producer/prod5.jpg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">KIA<br/><span class="video-title">Give It Everything</span></p>
+            </div>
+        </div>
+        <div id='p_videoTwo' class="image-container">
+            <img class="bg" src='/images/producer/prod6.png'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Tayla Parx<br/><span class="video-title">We Need to Talk / Spotify</span></p>
+            </div>                
+        </div>
+        <div id='p_videoThree' class="image-container">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Wiz Khalifa<br/><span class="video-title">Alright ft. Trippie Redd & Preme</span></p>
+            </div>
+            <img class="bg" src='/images/producer/prod3.jpg'></img>
+        </div>
+        <div id='p_videoFour' class="image-container">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">YUNGBLUD<br/><span class="video-title">Parents</span></p>
+            </div>
+            <img class="bg" src='/images/producer/prod4.jpg'></img>
+        </div>
+        <div id='p_videoFive' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Steve Aoki & Backstreet Boys<br/><span class="video-title">Let It Be Me</span></p>
+            </div>
+            <img class="bg" src='/images/producer/prod2.jpg'></img>
+        </div>
+    </div>
+    <p id='producerSeemore' class='seemore'>__See More__</p>
+</div>
+
+<div id='editor' class="individual-section">
+    <div class="title-display">
+        <p class="dots">• • • • • • • • • • • • • • </p>
+        <h2 class='work-title'>Editor <span class='work-name'>Cal Laird</span></h2>
+    </div>
+    <div id='workGridContainer' class="work-grid-container">
+        <div id='e_videoOne' class="image-container">
+            <img class="bg" src='/images/editor/editor1.jpg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">JEEP<br/><span class="video-title">The Unknown</span></p>
+            </div>
+        </div>
+        <div id='e_videoTwo' class="image-container">
+            <img class="bg" src='/images/editor/editor2.jpg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Los Angeles Rams<br/></p>
+            </div>
+        </div>
+        <div id='e_videoThree' class="image-container">
+            <img class="bg" src='/images/editor/editor3.jpg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">ScHoolboy Q<br/><span class="video-title">Lies (feat.Ty Dolla $ign and YG)</span></p>
+            </div>
+        </div>
+        <div id='e_videoFour' class="image-container">
+            <img class="bg" src='/images/editor/editor4.jpg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Social House<br/><span class="video-title">Haunt You</span></p>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+
+<div id='photographer' class="individual-section">
+    <div class="title-display">
+        <p class="dots">• • • • • • • • • • • • • • </p>
+        <h2 class='work-title'>Photographer <span class='work-name'>Daniel Prakopcyk</span></h2>
+    </div>
+    <div id='workGridContainer' class="work-grid-container">
+        <div class="image-container">
+        <img id='ph__videoOne' class="bg" src='/images/photo/1.png'></img>
+        </div>
+        <div class="image-container">
+            <img id='ph_ph__videoTwo' class="bg" src='/images/photo/2.png'></img>
+        </div>
+        <div class="image-container">
+            <img id='ph_videoThree' class="bg" src='/images/photo/3.png'></img>
+        </div>
+        <div class="image-container">
+            <img id='ph_videoFour' class="bg" src='/images/photo/6.png'></img>
+        </div>
+        <div id='ph_videoFive' class="image-container hidden">
+            <img class="bg" src='/images/photo/5.png'></img>
+        </div>
+        <div id='ph_videoSix' class="image-container hidden">
+            <img class="bg" src='/images/photo/4.png'></img>
+        </div>
+        </a>
+    </div>
+    <p id='photographerSeemore' class='seemore'>__See More__</p>
+</div>
+
+<!-- The Modal 1 -->
+<center>
+    <div id="videoWrapper" class="modal">
+        <div class='modal-content'>
+            <span class="close">X</span>
+            <iframe id='videoframe' width="80%" height="80%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</center>
+
+<script>
+$(document).ready(function() {
+    $('#loading').delay(3000).fadeOut(1000);
+});
+</script>
+
+<script>
+    // Get the modal
+    const modal = document.getElementById("videoWrapper");
+    var directorSeemore = document.getElementById("directorSeemore");
+    var producerSeemore = document.getElementById("producerSeemore");
+    var photographerSeemore = document.getElementById("photographerSeemore");
+
+
+    var d0_btn = document.getElementById("d_videoZero");
+    var d_btn = document.getElementById("d_videoOne");
+    var d_btn2 = document.getElementById("d_videoTwo");
+    var d_btn3 = document.getElementById("d_videoThree");
+    var d_btn4 = document.getElementById("d_videoFour");
+    var d_btn5 = document.getElementById("d_videoFive");
+    var d_btn6 = document.getElementById("d_videoSix");
+    var d_btn7 = document.getElementById("d_videoSeven");
+    var d_btn8 = document.getElementById("d_videoEight");
+    var d_btn9 = document.getElementById("d_videoNine");
+    var d_btn10 = document.getElementById("d_videoTen");
+
+    var p_btn = document.getElementById("p_videoOne");
+    var p_btn2 = document.getElementById("p_videoTwo");
+    var p_btn3 = document.getElementById("p_videoThree");
+    var p_btn4 = document.getElementById("p_videoFour");
+    var p_btn5 = document.getElementById("p_videoFive");
+
+    var e_btn = document.getElementById("e_videoOne");
+    var e_btn2 = document.getElementById("e_videoTwo");
+    var e_btn3 = document.getElementById("e_videoThree");
+    var e_btn4 = document.getElementById("e_videoFour");
+
+    var d_btn4 = document.getElementById("d_videoFour");
+    var d_btn5 = document.getElementById("d_videoFive");
+
+    var ph_btn5 = document.getElementById("ph_videoFive");
+    var ph_btn6 = document.getElementById("ph_videoSix");
+
+    var directorSeemoreClicked = false;
+    $('#directorSeemore').click(() => {
+        directorSeemoreClicked = !directorSeemoreClicked;
+        swapSeemoreClicked('director')
+    });
+
+    var producerSeemoreClicked = false;
+    $('#producerSeemore').click(() => {
+        producerSeemoreClicked = !producerSeemoreClicked;
+        swapSeemoreClicked('producer')
+    });
+
+    var photographerSeemoreClicked = false;
+    $('#photographerSeemore').click(() => {
+        photographerSeemoreClicked = !photographerSeemoreClicked;
+        swapSeemoreClicked('photographer')
+    });
+
+    const swapSeemoreClicked = (type) => {
+
+        if (type === 'director') {
+            if (directorSeemoreClicked) {
+                directorSeemore.innerHTML = '__Collapse__';
+                d_btn4.classList.remove('hidden');
+                d_btn5.classList.remove('hidden');
+                d_btn6.classList.remove('hidden');
+                d_btn7.classList.remove('hidden');
+                d_btn8.classList.remove('hidden');
+                d_btn9.classList.remove('hidden');
+                d_btn10.classList.remove('hidden');
+            } else {
+                directorSeemore.innerHTML = '__See More__';
+                d_btn4.classList.add('hidden');
+                d_btn5.classList.add('hidden');
+                d_btn6.classList.add('hidden');
+                d_btn7.classList.add('hidden');
+                d_btn8.classList.add('hidden');
+                d_btn9.classList.add('hidden');
+                d_btn10.classList.add('hidden');
+            }
+        }
+        if (type === 'producer') {
+            if (producerSeemoreClicked) {
+                producerSeemore.innerHTML = '__Collapse__';
+                p_btn5.classList.remove('hidden');
+            } else {
+                producerSeemore.innerHTML = '__See More__';
+                p_btn5.classList.add('hidden');
+            }
+        }
+        if (type === 'photographer') {
+            if (photographerSeemoreClicked) {
+                photographerSeemore.innerHTML = '__Collapse__';
+                ph_btn5.classList.remove('hidden');
+                ph_btn6.classList.remove('hidden');
+            } else {
+                photographerSeemore.innerHTML = '__See More__';
+                ph_btn5.classList.add('hidden');
+                ph_btn6.classList.add('hidden');
+            }
         }
     }
-</script> --}}
-{{!-- need too figure out image background hover link change bg with a fade --}}
-{{!-- Ideas --}}
-{{!-- Use jQuery function to fade in new bg img --}}
-{{!-- find css property to change bg slowly...? --}}
-{{!-- otherwise idk stackoverflow! --}}
-{{!-- document.getElementById("landing").style.animation = "fadein 1.6s 1"; --}}
-{{!-- document.getElementById("landing").style.animation = "fadein 5s 1"; --}}
+
+    // unused.. Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    d0_btn.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/C0mi0txguLw';
+    }
+    d_btn.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/56-drfTY8Yw';
+    }
+    d_btn2.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/PRv2NaPZDoU';
+    }
+    d_btn3.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/udLA_rwpCP8';
+    }
+    d_btn4.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/pA2ATChYnJI';
+    }
+    d_btn5.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/HLuQbbMnlK4';
+    }
+    d_btn6.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/286924628?app_id=122963&wmode=opaque&autoplay=1';
+    }
+    d_btn7.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/h3YXec5gJi0';
+    }
+    d_btn8.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/LYWXPn4zZxs';
+    }
+    d_btn9.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/7kuq29YxqNg';
+    }
+    d_btn10.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/R3h8zO1uSpY';
+    }
+
+    p_btn.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/337630607?color=fafafa&title=0&byline=0&portrait=0';
+    }
+    p_btn2.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/334713501?color=5c5a5a&title=0&byline=0&portrait=0';
+    }
+    p_btn3.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctTeJRAW_yE';
+    }
+    p_btn4.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/oOWBsmgjmPo';
+    }
+    p_btn5.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
+    }
+
+    e_btn.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/332082943';
+    }
+    e_btn2.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://player.vimeo.com/video/310270361';
+    }
+    e_btn3.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/BxFk-6KppE4';
+    }
+    e_btn4.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ZoiL_My3RV0';
+    }
+
+
+    span.onclick = function() {
+        document.getElementById('videoframe').src = '';
+        modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            console.log('true')
+            modal.style.display = "none";
+            document.getElementById('videoframe').src = '';
+        }
+    }
+</script>
