@@ -120,48 +120,35 @@ body, html {
 }
 
 .landing {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
   position: relative;
-  background: url(/images/bg1.jpg) no-repeat center;
-  background-size: cover !important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-animation: slide 16s infinite ease-in-out;
+  -webkit-animation: fadein 4s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: slide 16s infinite ease-in-out;
+  -moz-animation: fadein 4s;
   /* Firefox < 16 */
-  -ms-animation: slide 16s infinite ease-in-out;
+  -ms-animation: fadein 4s;
   /* Internet Explorer */
-  -o-animation: slide 16s infinite ease-in-out;
+  -o-animation: fadein 4s;
   /* Opera < 12.1 */
-  animation: slide 16s infinite ease-in-out;
+  animation: fadein 4s;
 }
-
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.landing .content {
   text-transform: uppercase;
   text-align: center;
 }
-.content .home-title {
+.landing .content .home-title {
   color: #EEF0F2;
   font-family: "Sf-Prop-Display-Black", serif;
-  font-size: 48px;
+  font-size: 5em;
   letter-spacing: 1px;
 }
-.content .menu {
+.landing .content .menu {
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: space-between;
 }
-.content .menu p {
+.landing .content .menu p {
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 1em;
@@ -169,7 +156,7 @@ body, html {
   font-size: 24px;
   cursor: pointer;
 }
-.content .menu p:hover {
+.landing .content .menu p:hover {
   border-bottom: 2px solid #1F3822;
 }
 
@@ -245,28 +232,13 @@ body, html {
 }
 @media screen and (max-width: 768px) {
   /* Specific to this particular image */
-  .landing {
-    -webkit-animation: slide 16s infinite ease-in-out;
-    /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: slide 16s infinite ease-in-out;
-    /* Firefox < 16 */
-    -ms-animation: slide 16s infinite ease-in-out;
-    /* Internet Explorer */
-    -o-animation: slide 16s infinite ease-in-out;
-    /* Opera < 12.1 */
-    animation: slide 16s infinite ease-in-out;
-  }
   .landing .content {
-    width: 100%;
-    position: absolute;
-    top: auto;
-    left: auto;
     transform: none;
     text-transform: uppercase;
     text-align: center;
   }
   .landing .content .home-title {
-    margin-top: 3em;
+    margin-top: 1em;
     font-size: 2em;
     letter-spacing: 1px;
   }
@@ -366,7 +338,7 @@ a {
   color: #EEF0F2;
   margin: 0 auto;
   display: block;
-  padding-top: 12em;
+  padding-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -401,7 +373,7 @@ a {
 .individual-section .seemore {
   color: #EEF0F2;
   font-size: 1.5em;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
   text-align: center;
 }
 .individual-section .seemore:hover {
@@ -506,7 +478,7 @@ iframe {
     color: #EEF0F2;
     margin: 0 auto;
     display: block;
-    padding-top: 6em;
+    padding-top: 3em;
   }
   .individual-section .title-display {
     display: flex;
@@ -522,10 +494,10 @@ iframe {
     font-size: 1.8em;
   }
   .individual-section .title-display .work-name {
-    font-size: 0.8em;
+    font-size: 1.16em;
   }
   .individual-section .seemore {
-    margin-bottom: 0;
+    margin-bottom: 0.2em;
   }
   .individual-section .work-grid-container {
     margin-top: 1em;
@@ -989,6 +961,70 @@ body {
   background-size: cover;
 }
 
+@font-face {
+  font-family: "DINCondensed-Bold";
+  src: url("/assets/fonts/DINCondensed-Bold.ttf");
+}
+@font-face {
+  font-family: "Sf-Prop-Display-Black";
+  src: url("/assets/fonts/SF.otf");
+}
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.anim-hov-fast {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.btn_primary {
+  width: 155px;
+  height: 39px;
+  color: #bcbcbe;
+  background: #1b311e;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.btn_primary:hover {
+  color: #EEF0F2;
+  background: #254429;
+}
+
+.dots {
+  color: #656565;
+  font-size: 5px;
+  margin-right: 2.4em;
+  letter-spacing: 2px;
+  margin-bottom: -2px;
+}
+
+@media screen and (max-width: 768px) {
+  .dots {
+    color: #656565;
+    font-size: 5px;
+    margin-right: 0;
+    letter-spacing: 1px;
+  }
+}
+a {
+  color: #EEF0F2;
+  text-decoration: none;
+}
+
+.footer-contact {
+  margin: 0;
+  font-family: "DINCondensed-Bold", serif;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
 html, body {
   background-color: #0B0B0B;
   height: 100vh;
@@ -1035,12 +1071,14 @@ footer {
   width: 100%;
   font-family: "IBM Plex Sans", sans-serif;
   padding-top: 1.2em;
-  font-size: 1.2em;
   text-align: center;
   height: 14.4em;
-  background-color: black;
-  color: white;
+  background-color: #080808;
   margin-top: 4em;
+  color: #EEF0F2;
+  font-family: "Sf-Prop-Display-Black", serif;
+  font-size: 1em;
+  letter-spacing: 1px;
 }
 footer .credits {
   font-family: monospace;
@@ -1049,6 +1087,7 @@ footer .credits {
 
 #loading {
   position: fixed;
+  top: 0;
   width: 100%;
   height: 100vh;
   background: #0B0B0B url("/images/loading.svg") no-repeat center center;

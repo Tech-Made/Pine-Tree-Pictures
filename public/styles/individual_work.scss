@@ -6,7 +6,7 @@
     color: $primary;
     margin: 0 auto;
     display: block;
-    padding-top: 12em;
+    padding-top: 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@
     .seemore {
         color: $primary;
         font-size: 1.5em;
-        margin-bottom: 4em;
+        margin-bottom: 1em;
         text-align: center;
     }
     .seemore:hover {
@@ -154,7 +154,7 @@ iframe {
         color: $primary;
         margin: 0 auto;
         display: block;
-        padding-top: 6em;
+        padding-top: 3em;
         .title-display {
             display: flex;
             flex-direction: column;
@@ -168,11 +168,11 @@ iframe {
                 font-size: 1.8em;
             }
             .work-name {
-                font-size: 0.8em;
+                font-size: 1.16em;
             }
         }
         .seemore {
-            margin-bottom: 0;
+            margin-bottom: .2em;
         }
         .work-grid-container {
             margin-top: 1em;
