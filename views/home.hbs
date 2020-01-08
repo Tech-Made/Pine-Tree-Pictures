@@ -87,6 +87,21 @@
             </div>
             <img class="bg" src='/images/director/direc10.jpg'></img>
         </div>
+
+        <div id='d_videoEleven' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Melii<br/><span class="video-title">No Hard Feelings</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc11.jpg'></img>
+        </div>
+
+        <div id='d_videoTwelve' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Greyson Chance<br/><span class="video-title">Shut Up</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc12.png'></img>
+        </div>
+
     </div>
     <p id='directorSeemore' class='seemore'>__See More__</p>
 </div>
@@ -229,6 +244,9 @@ $(document).ready(function() {
     var d_btn8 = document.getElementById("d_videoEight");
     var d_btn9 = document.getElementById("d_videoNine");
     var d_btn10 = document.getElementById("d_videoTen");
+    var d_btn11 = document.getElementById("d_videoEleven");
+    var d_btn12 = document.getElementById("d_videoTwelve");
+
 
     var p_btn = document.getElementById("p_videoOne");
     var p_btn2 = document.getElementById("p_videoTwo");
@@ -277,6 +295,8 @@ $(document).ready(function() {
                 d_btn8.classList.remove('hidden');
                 d_btn9.classList.remove('hidden');
                 d_btn10.classList.remove('hidden');
+                d_btn11.classList.remove('hidden');
+                d_btn12.classList.remove('hidden');
             } else {
                 directorSeemore.innerHTML = '__See More__';
                 d_btn4.classList.add('hidden');
@@ -286,6 +306,8 @@ $(document).ready(function() {
                 d_btn8.classList.add('hidden');
                 d_btn9.classList.add('hidden');
                 d_btn10.classList.add('hidden');
+                d_btn11.classList.add('hidden');
+                d_btn12.classList.add('hidden');
             }
         }
         if (type === 'producer') {
@@ -357,6 +379,14 @@ $(document).ready(function() {
     d_btn10.onclick = function() {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/R3h8zO1uSpY';
+    }
+    d_btn11.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Q0P3_tE6m7g';
+    }
+    d_btn12.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/SpNn32HA0SI';
     }
 
     p_btn.onclick = function() {
