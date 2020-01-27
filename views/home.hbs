@@ -21,16 +21,16 @@
     <div id='workGridContainer' class="work-grid-container">
 
         <div id='d_videoZero' class="image-container">
-            <img class="bg" src='/images/director/direc0.jpg'></img>
+            <img class="bg" src='/images/director/direc1.jpg'></img>
             <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Marc E. Bassy<br/><span class="video-title">NASCAR</span></p>
+                <p id='textOverlay' class="centered artist-title">Vic Mensa<br/><span class="video-title">Dark Things</span></p>
             </div>
         </div>
 
         <div id='d_videoOne' class="image-container">
-            <img class="bg" src='/images/director/direc1.jpg'></img>
+            <img class="bg" src='/images/director/direc3.jpg'></img>
             <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Vic Mensa<br/><span class="video-title">Dark Things</span></p>
+                <p id='textOverlay' class="centered artist-title">Call Me Karizma<br/><span class="video-title">Rebels</span></p>
             </div>
         </div>
         <div id='d_videoTwo' class="image-container">
@@ -41,9 +41,9 @@
         </div>
         <div id='d_videoThree' class="image-container">
             <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Call Me Karizma<br/><span class="video-title">Rebels</span></p>
+                <p id='textOverlay' class="centered artist-title">Marc E. Bassy<br/><span class="video-title">NASCAR</span></p>
             </div>
-            <img class="bg" src='/images/director/direc3.jpg'></img>
+            <img class="bg" src='/images/director/direc0.jpg'></img>
         </div>
         <div id='d_videoFour' class="image-container hidden">
             <div class='overlay'>
@@ -100,6 +100,27 @@
                 <p id='textOverlay' class="centered artist-title">Greyson Chance<br/><span class="video-title">Shut Up</span></p>
             </div>
             <img class="bg" src='/images/director/direc12.png'></img>
+        </div>
+
+        <div id='d_videoThirteen' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Arin Ray<br/><span class="video-title">The Get Down</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc13.jpg'></img>
+        </div>
+
+        <div id='d_videoFourteen' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Greyson Chance<br/><span class="video-title">Boots</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc14.jpg'></img>
+        </div>
+
+        <div id='d_videoFifteen' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Flaws and All<br/><span class="video-title">Ebenezer</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc15.jpg'></img>
         </div>
 
     </div>
@@ -246,6 +267,10 @@ $(document).ready(function() {
     var d_btn10 = document.getElementById("d_videoTen");
     var d_btn11 = document.getElementById("d_videoEleven");
     var d_btn12 = document.getElementById("d_videoTwelve");
+    var d_btn13 = document.getElementById("d_videoThirteen");
+    var d_btn14 = document.getElementById("d_videoFourteen");
+    var d_btn15 = document.getElementById("d_videoFifteen");
+
 
 
     var p_btn = document.getElementById("p_videoOne");
@@ -297,6 +322,10 @@ $(document).ready(function() {
                 d_btn10.classList.remove('hidden');
                 d_btn11.classList.remove('hidden');
                 d_btn12.classList.remove('hidden');
+                d_btn13.classList.remove('hidden');
+                d_btn14.classList.remove('hidden');
+                d_btn15.classList.remove('hidden');
+
             } else {
                 directorSeemore.innerHTML = '__See More__';
                 d_btn4.classList.add('hidden');
@@ -308,6 +337,9 @@ $(document).ready(function() {
                 d_btn10.classList.add('hidden');
                 d_btn11.classList.add('hidden');
                 d_btn12.classList.add('hidden');
+                d_btn13.classList.add('hidden');
+                d_btn14.classList.add('hidden');
+                d_btn15.classList.add('hidden');
             }
         }
         if (type === 'producer') {
@@ -338,11 +370,11 @@ $(document).ready(function() {
     // When the user clicks the button, open the modal 
     d0_btn.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/C0mi0txguLw';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/56-drfTY8Yw';
     }
     d_btn.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/56-drfTY8Yw';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/udLA_rwpCP8';
     }
     d_btn2.onclick = function() {
         modal.style.display = "block";
@@ -350,7 +382,7 @@ $(document).ready(function() {
     }
     d_btn3.onclick = function() {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/udLA_rwpCP8';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/C0mi0txguLw';
     }
     d_btn4.onclick = function() {
         modal.style.display = "block";
@@ -387,6 +419,18 @@ $(document).ready(function() {
     d_btn12.onclick = function() {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/SpNn32HA0SI';
+    }
+    d_btn13.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/6shqC6_sUas';
+    }
+    d_btn14.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/cdt0YlUvQ7o';
+    }
+    d_btn15.onclick = function() {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/qXSSzzxWcN0';
     }
 
     p_btn.onclick = function() {
