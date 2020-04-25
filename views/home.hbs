@@ -79,7 +79,7 @@
                 <p id='textOverlay' class="centered artist-title">Marc E. Bassy<br /><span
                         class="video-title">NASCAR</span></p>
             </div>
-            <img class="bg" src='/images/director/direc0.jpg'></img>
+            <img class="bg" src='/images/director/direc0.png'></img>
         </div>
         <div id='d_videoTwo' class="image-container hidden">
             <img class="bg" src='/images/director/direc17.png'></img>
@@ -171,6 +171,31 @@
                         class="video-title">Miami</span></p>
             </div>
             <img class="bg" src='/images/director/direc19.png'></img>
+        </div>
+
+
+        <div id='d_videoTwenty' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Luh Kel<br /><span class="video-title">Y.O.U.</span>
+                </p>
+            </div>
+            <img class="bg" src='/images/director/direc200.png'></img>
+        </div>
+
+        <div id='d_videoTwentyOne' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Call Me Karizma<br /><span class="video-title">I'm
+                        ok</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc20.png'></img>
+        </div>
+
+        <div id='d_videoTwentyTwo' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Noah Cunane<br /><span
+                        class="video-title">Miami</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc21.png'></img>
         </div>
 
     </div>
@@ -356,6 +381,10 @@
     var d_btn13 = document.getElementById("d_videoThirteen");
     var d_btn14 = document.getElementById("d_videoFourteen");
     var d_btn15 = document.getElementById("d_videoFifteen");
+    var d20_btn = document.getElementById("d_videoTwenty");
+    var d21_btn = document.getElementById("d_videoTwentyOne");
+    var d22_btn = document.getElementById("d_videoTwentyTwo");
+
 
 
 
@@ -415,6 +444,9 @@
                 d_btn15.classList.remove('hidden');
                 d18_btn.classList.remove('hidden');
                 d19_btn.classList.remove('hidden');
+                d20_btn.classList.remove('hidden');
+                d21_btn.classList.remove('hidden');
+                d22_btn.classList.remove('hidden');
             } else {
                 directorSeemore.innerHTML = '__See More__';
                 d_btn2.classList.add('hidden');
@@ -433,6 +465,10 @@
                 d_btn15.classList.add('hidden');
                 d18_btn.classList.add('hidden');
                 d19_btn.classList.add('hidden');
+                d20_btn.classList.add('hidden');
+                d21_btn.classList.add('hidden');
+                d22_btn.classList.add('hidden');
+
             }
         }
         if (type === 'producer') {
@@ -461,6 +497,18 @@
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal 
+    d22_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/JL-6GFUoKP8';
+    }
+    d21_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/gxozJLZWjHs';
+    }
+    d20_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/0y_2VU7x0hA';
+    }
     d17_btn.onclick = function () {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/PRv2NaPZDoU';
