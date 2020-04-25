@@ -53,20 +53,6 @@
                         class="video-title">Rebels</span></p>
             </div>
         </div>
-        <div id='d_videoTwo' class="image-container hidden">
-            <img class="bg" src='/images/director/direc17.png'></img>
-            <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Armaan Malik<br /><span
-                        class="video-title">Control</span></p>
-            </div>
-        </div>
-        <div id='d_videoThree' class="image-container hidden">
-            <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Marc E. Bassy<br /><span
-                        class="video-title">NASCAR</span></p>
-            </div>
-            <img class="bg" src='/images/director/direc0.jpg'></img>
-        </div>
         <div id='d_videoFour' class="image-container hidden">
             <div class='overlay'>
                 <p id='textOverlay' class="centered artist-title">Rich the Kid x Miguel x TY$<br /><span
@@ -80,6 +66,27 @@
                         Nana</span></p>
             </div>
             <img class="bg" src='/images/director/direc5.png'></img>
+        </div>
+        <div id='d_videoThreeOne' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Afro B ft. T-Pain<br /><span
+                        class="video-title">Condo</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc18.png'></img>
+        </div>
+        <div id='d_videoThree' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Marc E. Bassy<br /><span
+                        class="video-title">NASCAR</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc0.jpg'></img>
+        </div>
+        <div id='d_videoTwo' class="image-container hidden">
+            <img class="bg" src='/images/director/direc17.png'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Armaan Malik<br /><span
+                        class="video-title">Control</span></p>
+            </div>
         </div>
         <div id='d_videoSix' class="image-container hidden">
             <div class='overlay'>
@@ -156,6 +163,14 @@
                         class="video-title">Ebenezer</span></p>
             </div>
             <img class="bg" src='/images/director/direc15.jpg'></img>
+        </div>
+
+        <div id='d_videoNineteen' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Noah Cunane<br /><span
+                        class="video-title">Miami</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc19.png'></img>
         </div>
 
     </div>
@@ -321,6 +336,7 @@
     var photographerSeemore = document.getElementById("photographerSeemore");
 
 
+    var d19_btn = document.getElementById("d_videoNineteen");
     var d17_btn = document.getElementById("d_videoSeventeen");
     var d16_btn = document.getElementById("d_videoSixteen");
     var d0_btn = document.getElementById("d_videoZero");
@@ -329,6 +345,7 @@
     var d_btn3 = document.getElementById("d_videoThree");
     var d_btn4 = document.getElementById("d_videoFour");
     var d_btn5 = document.getElementById("d_videoFive");
+    var d18_btn = document.getElementById("d_videoThreeOne");
     var d_btn6 = document.getElementById("d_videoSix");
     var d_btn7 = document.getElementById("d_videoSeven");
     var d_btn8 = document.getElementById("d_videoEight");
@@ -396,7 +413,8 @@
                 d_btn13.classList.remove('hidden');
                 d_btn14.classList.remove('hidden');
                 d_btn15.classList.remove('hidden');
-
+                d18_btn.classList.remove('hidden');
+                d19_btn.classList.remove('hidden');
             } else {
                 directorSeemore.innerHTML = '__See More__';
                 d_btn2.classList.add('hidden');
@@ -413,6 +431,8 @@
                 d_btn13.classList.add('hidden');
                 d_btn14.classList.add('hidden');
                 d_btn15.classList.add('hidden');
+                d18_btn.classList.add('hidden');
+                d19_btn.classList.add('hidden');
             }
         }
         if (type === 'producer') {
@@ -512,6 +532,14 @@
     d_btn15.onclick = function () {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/qXSSzzxWcN0';
+    }
+    d18_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/gx329LKomVA';
+    }
+    d19_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/P1hD6F64tks';
     }
 
     p_btn.onclick = function () {
