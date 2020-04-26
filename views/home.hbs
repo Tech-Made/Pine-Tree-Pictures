@@ -192,10 +192,50 @@
 
         <div id='d_videoTwentyTwo' class="image-container hidden">
             <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Noah Cunane<br /><span
-                        class="video-title">Miami</span></p>
+                <p id='textOverlay' class="centered artist-title">9lokkNine x NLE Choppa x Murda Beatz<br /><span
+                        class="video-title">Beef WSHH Exclusive</span></p>
             </div>
             <img class="bg" src='/images/director/direc21.png'></img>
+        </div>
+
+        <div id='d_videoTwentyThree' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Rockie Fresh x Chris Brown<br /><span
+                        class="video-title">Must Be</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc23.png'></img>
+        </div>
+
+        <div id='d_videoTwentyFour' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Vic Mensa x Ty Dolla $ign<br /><span
+                        class="video-title">In Some Trouble</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc24.png'></img>
+        </div>
+
+        <div id='d_videoTwentyFive' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Greyson Chance<br /><span
+                        class="video-title">yours</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc25.png'></img>
+        </div>
+
+        <div id='d_videoTwentySix' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Vic Mensa x G-Eazy<br /><span
+                        class="video-title">Reverse</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc26.png'></img>
+        </div>
+
+        <div id='d_videoTwentySeven' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Theophilus London<br /><span
+                        class="video-title">Pretty</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc27.png'></img>
         </div>
 
     </div>
@@ -384,6 +424,12 @@
     var d20_btn = document.getElementById("d_videoTwenty");
     var d21_btn = document.getElementById("d_videoTwentyOne");
     var d22_btn = document.getElementById("d_videoTwentyTwo");
+    var d23_btn = document.getElementById("d_videoTwentyThree");
+    var d24_btn = document.getElementById("d_videoTwentyFour");
+    var d25_btn = document.getElementById("d_videoTwentyFive");
+    var d26_btn = document.getElementById("d_videoTwentySix");
+    var d27_btn = document.getElementById("d_videoTwentySeven");
+
 
 
 
@@ -447,6 +493,11 @@
                 d20_btn.classList.remove('hidden');
                 d21_btn.classList.remove('hidden');
                 d22_btn.classList.remove('hidden');
+                d23_btn.classList.remove('hidden');
+                d24_btn.classList.remove('hidden');
+                d25_btn.classList.remove('hidden');
+                d26_btn.classList.remove('hidden');
+                d27_btn.classList.remove('hidden');
             } else {
                 directorSeemore.innerHTML = '__See More__';
                 d_btn2.classList.add('hidden');
@@ -468,6 +519,11 @@
                 d20_btn.classList.add('hidden');
                 d21_btn.classList.add('hidden');
                 d22_btn.classList.add('hidden');
+                d23_btn.classList.add('hidden');
+                d24_btn.classList.add('hidden');
+                d25_btn.classList.add('hidden');
+                d26_btn.classList.add('hidden');
+                d27_btn.classList.add('hidden');
 
             }
         }
@@ -497,6 +553,26 @@
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal 
+    d27_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/8HtgQ1XiKDo';
+    }
+    d26_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/I8ijb4Zee5E';
+    }
+    d25_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/WrcN9m4tgFQ';
+    }
+    d24_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/pE3ViytAkHI';
+    }
+    d23_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/kT0zwbQI-b4';
+    }
     d22_btn.onclick = function () {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/JL-6GFUoKP8';
