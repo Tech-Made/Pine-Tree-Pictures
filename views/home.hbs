@@ -24,23 +24,6 @@
     </div>
     <div id='workGridContainer' class="work-grid-container">
 
-        <div id='d_videoSeventeen' class="image-container">
-            <img class="bg" src='/images/director/direc2.jpeg'></img>
-            <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Greyson Chance<br /><span class="video-title">White
-                        Roses</span></p>
-            </div>
-        </div>
-
-        <div id='d_videoSixteen' class="image-container">
-            <img class="bg" src='/images/director/direc16.png'></img>
-            <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Lecrae and YK Osiris<br /><span class="video-title">
-                        Set Me Free
-                    </span></p>
-            </div>
-        </div>
-
         <div id='d_videoZero' class="image-container">
             <img class="bg" src='/images/director/direc1.jpg'></img>
             <div class='overlay'>
@@ -48,7 +31,6 @@
                         Things</span></p>
             </div>
         </div>
-
         <div id='d_videoOne' class="image-container">
             <img class="bg" src='/images/director/direc3.jpg'></img>
             <div class='overlay'>
@@ -56,19 +38,34 @@
                         class="video-title">Rebels</span></p>
             </div>
         </div>
-        <div id='d_videoFour' class="image-container hidden">
+
+        <div id='d_videoSeventeen' class="image-container">
+            <img class="bg" src='/images/director/direc2.jpeg'></img>
             <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Rich the Kid x Miguel x TY$<br /><span
-                        class="video-title">Woah</span></p>
+                <p id='textOverlay' class="centered artist-title">Greyson Chance<br /><span class="video-title">White
+                        Roses</span></p>
             </div>
-            <img class="bg" src='/images/director/direc4.png'></img>
         </div>
-        <div id='d_videoFive' class="image-container hidden">
+        <div id='d_videoFive' class="image-container">
             <div class='overlay'>
                 <p id='textOverlay' class="centered artist-title">Dram x Trippie Redd<br /><span class="video-title">Ill
                         Nana</span></p>
             </div>
             <img class="bg" src='/images/director/direc5.png'></img>
+        </div>
+        <div id='d_videoTwentyFive' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Greyson Chance<br /><span
+                        class="video-title">yours</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc25.png'></img>
+        </div>
+        <div id='d_videoSix' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Vic Mensa<br /><span
+                        class="video-title">Metaphysical</span></p>
+            </div>
+            <img class="bg" src='/images/bg2.jpg'></img>
         </div>
         <div id='d_videoThreeOne' class="image-container hidden">
             <div class='overlay'>
@@ -84,19 +81,27 @@
             </div>
             <img class="bg" src='/images/director/direc0.png'></img>
         </div>
+        <div id='d_videoSixteen' class="image-container hidden">
+            <img class="bg" src='/images/director/direc16.png'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Lecrae and YK Osiris<br /><span class="video-title">
+                        Set Me Free
+                    </span></p>
+            </div>
+        </div>
+        <div id='d_videoFour' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Rich the Kid x Miguel x TY$<br /><span
+                        class="video-title">Woah</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc4.png'></img>
+        </div>
         <div id='d_videoTwo' class="image-container hidden">
             <img class="bg" src='/images/director/direc17.png'></img>
             <div class='overlay'>
                 <p id='textOverlay' class="centered artist-title">Armaan Malik<br /><span
                         class="video-title">Control</span></p>
             </div>
-        </div>
-        <div id='d_videoSix' class="image-container hidden">
-            <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Vic Mensa<br /><span
-                        class="video-title">Metaphysical</span></p>
-            </div>
-            <img class="bg" src='/images/bg2.jpg'></img>
         </div>
         <div id='d_videoSeven' class="image-container hidden">
             <div class='overlay'>
@@ -215,14 +220,6 @@
                         class="video-title">In Some Trouble</span></p>
             </div>
             <img class="bg" src='/images/director/direc24.png'></img>
-        </div>
-
-        <div id='d_videoTwentyFive' class="image-container hidden">
-            <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Greyson Chance<br /><span
-                        class="video-title">yours</span></p>
-            </div>
-            <img class="bg" src='/images/director/direc25.png'></img>
         </div>
 
         <div id='d_videoTwentySix' class="image-container hidden">
@@ -479,7 +476,7 @@
                 directorSeemore.innerHTML = '__Collapse__';
                 d_btn2.classList.remove('hidden');
                 d_btn3.classList.remove('hidden');
-                d_btn4.classList.remove('hidden');
+                d16_btn.classList.remove('hidden');
                 d_btn5.classList.remove('hidden');
                 d_btn6.classList.remove('hidden');
                 d_btn7.classList.remove('hidden');
@@ -505,7 +502,7 @@
                 directorSeemore.innerHTML = '__See More__';
                 d_btn2.classList.add('hidden');
                 d_btn3.classList.add('hidden');
-                d_btn4.classList.add('hidden');
+                d16_btn.classList.add('hidden');
                 d_btn5.classList.add('hidden');
                 d_btn6.classList.add('hidden');
                 d_btn7.classList.add('hidden');
