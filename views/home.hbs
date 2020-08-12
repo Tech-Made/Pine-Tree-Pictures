@@ -198,13 +198,13 @@
             <img class="bg" src='/images/director/direc20.png'></img>
         </div>
 
-        <div id='d_videoTwentyTwo' class="image-container hidden">
+        {{!-- <div id='d_videoTwentyTwo' class="image-container hidden">
             <div class='overlay'>
                 <p id='textOverlay' class="centered artist-title">9lokkNine x NLE Choppa x Murda Beatz<br /><span
                         class="video-title">Beef WSHH Exclusive</span></p>
             </div>
             <img class="bg" src='/images/director/direc21.png'></img>
-        </div>
+        </div> --}}
 
         <div id='d_videoTwentyThree' class="image-container hidden">
             <div class='overlay'>
@@ -423,7 +423,6 @@
     var d_btn15 = document.getElementById("d_videoFifteen");
     var d20_btn = document.getElementById("d_videoTwenty");
     var d21_btn = document.getElementById("d_videoTwentyOne");
-    var d22_btn = document.getElementById("d_videoTwentyTwo");
     var d23_btn = document.getElementById("d_videoTwentyThree");
     var d24_btn = document.getElementById("d_videoTwentyFour");
     var d25_btn = document.getElementById("d_videoTwentyFive");
@@ -446,7 +445,6 @@
     var e_btn4 = document.getElementById("e_videoFour");
 
     var d_btn4 = document.getElementById("d_videoFour");
-    var d_btn5 = document.getElementById("d_videoFive");
 
     var ph_btn5 = document.getElementById("ph_videoFive");
     var ph_btn6 = document.getElementById("ph_videoSix");
@@ -477,7 +475,6 @@
                 d_btn2.classList.remove('hidden');
                 d_btn3.classList.remove('hidden');
                 d16_btn.classList.remove('hidden');
-                d_btn5.classList.remove('hidden');
                 d_btn6.classList.remove('hidden');
                 d_btn7.classList.remove('hidden');
                 d_btn8.classList.remove('hidden');
@@ -492,7 +489,6 @@
                 d19_btn.classList.remove('hidden');
                 d20_btn.classList.remove('hidden');
                 d21_btn.classList.remove('hidden');
-                d22_btn.classList.remove('hidden');
                 d23_btn.classList.remove('hidden');
                 d24_btn.classList.remove('hidden');
                 d25_btn.classList.remove('hidden');
@@ -518,7 +514,6 @@
                 d19_btn.classList.add('hidden');
                 d20_btn.classList.add('hidden');
                 d21_btn.classList.add('hidden');
-                d22_btn.classList.add('hidden');
                 d23_btn.classList.add('hidden');
                 d24_btn.classList.add('hidden');
                 d25_btn.classList.add('hidden');
@@ -572,10 +567,6 @@
     d23_btn.onclick = function () {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/kT0zwbQI-b4';
-    }
-    d22_btn.onclick = function () {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/JL-6GFUoKP8';
     }
     d21_btn.onclick = function () {
         modal.style.display = "block";
