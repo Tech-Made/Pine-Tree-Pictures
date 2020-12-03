@@ -81,6 +81,30 @@
             </div>
             <img class="bg" src='/images/director/direc0.png'></img>
         </div>
+        <div id='d_videoTwentyEight' class="image-container hidden">
+            <img class="bg" src='/images/director/direc28.png'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Chelsea Collins ft. 24kGoldn<br /><span
+                        class="video-title">
+                        Water Run Dry
+                    </span></p>
+            </div>
+        </div>
+        <div id='d_videoTwentyNine' class="image-container hidden">
+            <img class="bg" src='/images/director/direc29.png'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Cyrus Dobre<br /><span class="video-title">
+                        Bye Bye
+                    </span></p>
+            </div>
+        </div>
+        <div id='d_videoTwentySeven' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Theophilus London<br /><span
+                        class="video-title">Pretty</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc27.png'></img>
+        </div>
         <div id='d_videoSixteen' class="image-container hidden">
             <img class="bg" src='/images/director/direc16.png'></img>
             <div class='overlay'>
@@ -229,14 +253,14 @@
             </div>
             <img class="bg" src='/images/director/direc26.png'></img>
         </div>
-
-        <div id='d_videoTwentySeven' class="image-container hidden">
+        <div id='d_videoThirtyOne' class="image-container hidden">
             <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Theophilus London<br /><span
-                        class="video-title">Pretty</span></p>
+                <p id='textOverlay' class="centered artist-title">Elina<br /><span class="video-title">
+                        Paper Planes</span></p>
             </div>
-            <img class="bg" src='/images/director/direc27.png'></img>
+            <img class="bg" src='/images/director/direc31.png'></img>
         </div>
+
 
     </div>
     <p id='directorSeemore' class='seemore'>__See More__</p>
@@ -428,6 +452,9 @@
     var d25_btn = document.getElementById("d_videoTwentyFive");
     var d26_btn = document.getElementById("d_videoTwentySix");
     var d27_btn = document.getElementById("d_videoTwentySeven");
+    var d28_btn = document.getElementById("d_videoTwentyEight");
+    var d29_btn = document.getElementById("d_videoTwentyNine");
+    var d31_btn = document.getElementById("d_videoThirtyOne");
 
 
 
@@ -494,6 +521,9 @@
                 d25_btn.classList.remove('hidden');
                 d26_btn.classList.remove('hidden');
                 d27_btn.classList.remove('hidden');
+                d28_btn.classList.remove('hidden');
+                d29_btn.classList.remove('hidden');
+                d31_btn.classList.remove('hidden');
             } else {
                 directorSeemore.innerHTML = '__See More__';
                 d_btn2.classList.add('hidden');
@@ -518,7 +548,9 @@
                 d25_btn.classList.add('hidden');
                 d26_btn.classList.add('hidden');
                 d27_btn.classList.add('hidden');
-
+                d28_btn.classList.add('hidden');
+                d29_btn.classList.add('hidden');
+                d31_btn.classList.add('hidden');
             }
         }
         if (type === 'producer') {
@@ -547,6 +579,14 @@
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal 
+    d29_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/-B3BRdjKSAQ';
+    }
+    d28_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/e-pcZw-HbWg';
+    }
     d27_btn.onclick = function () {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/8HtgQ1XiKDo';
@@ -650,6 +690,10 @@
     d18_btn.onclick = function () {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/gx329LKomVA';
+    }
+    d31_btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/1suA1EWGfag';
     }
     d19_btn.onclick = function () {
         modal.style.display = "block";
