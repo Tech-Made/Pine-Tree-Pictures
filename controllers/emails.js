@@ -1,19 +1,19 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const sgMail = require('@sendgrid/mail');
-const User = require('../models/user');
+const sgMail = require("@sendgrid/mail");
+const User = require("../models/user");
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-router.post('/contact', async (req, res) => {
-    const data = req.body;
-    const user = new User(data);
-    user.save();
-    try {
-        await sgMail.send({
-            to: 'bobby@pinetreepictures.com',
-            from: data.email,
-            subject: 'Pine Tree Pictures Site Contact Inquiry',
-            html: `
+router.post("/contact", async (req, res) => {
+  const data = req.body;
+  // const user = new User(data);
+  //   user.save();
+  try {
+    await sgMail.send({
+      to: "bobby@pinetreepictures.com",
+      from: data.email,
+      subject: "Pine Tree Pictures Site Contact Inquiry",
+      html: `
             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
             <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
             <head>
@@ -163,13 +163,13 @@ router.post('/contact', async (req, res) => {
             </body>
             </html>
             `
-        });
-        res.status(200);
-        return res.end();
-    } catch(e) {
-        res.status(500);
-        return res.end();
-    }
-})
+    });
+    res.status(200);
+    return res.end();
+  } catch (e) {
+    res.status(500);
+    return res.end();
+  }
+});
 
 module.exports = router;
