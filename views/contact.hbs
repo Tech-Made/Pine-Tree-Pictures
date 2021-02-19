@@ -31,24 +31,30 @@
             </ul>
         </div>
     </nav>
-    <div class="content">
+    <div class='new-content'>
         <div class="write-us">
             <p>Write Us</p>
         </div>
 
-        <form class="contact-form" method="POST" action="/contact">
-            <input type='text' id='name' name='name' placeholder="Your Name"></input>
-            <input type='email' id='email' name='email' placeholder="Your Email"></input>
-            <input type='text' id='phone' name='phone' placeholder="Your Number"></input>
-            <textarea type='text' id='message' name='message' placeholder="Your Message"></textarea>
-            <button id='contact_form_submit' type='button' class="btn_primary g-recaptcha"
-                data-sitekey="6LdUGl8aAAAAABXR8ciRKvgk4jY70iPBhOPcp4WJ" data-callback='onSubmit'
-                data-action='submit'>Send</button>
-        </form>
+        <h1 style="color: #EEF0F2">bobby@pinetreepictures.com</h1>
+        {{!-- <form class="contact-form" method="POST" action="/contact">
+                <input type='text' id='name' name='name' placeholder="Your Name"></input>
+                <input type='email' id='email' name='email' placeholder="Your Email"></input>
+                <input type='text' id='phone' name='phone' placeholder="Your Number"></input>
+                <textarea type='text' id='message' name='message' placeholder="Your Message"></textarea>
+                <button id='contact_form_submit' type='button' class="btn_primary">Send</button>
+            </form> --}}
     </div>
 </div>
 
 <style>
+    .new-content {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
+    }
+
     nav {
         padding: 8px;
         display: flex;
@@ -141,6 +147,11 @@
     }
 
     @media screen and (max-width: 864px) {
+
+        .new-content>* {
+            font-size: 20px;
+        }
+
         nav {
             display: block;
         }
@@ -347,10 +358,4 @@
             $("#contact_form_submit").html('Something Went Wrong! Try again later.');
         });
     });
-</script>
-
-<script>
-    function onSubmit(token) {
-        document.getElementById("demo-form").submit();
-    }
 </script>
