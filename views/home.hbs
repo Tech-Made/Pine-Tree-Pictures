@@ -48,6 +48,13 @@
         </div>
         <div id='d_videoFive' class="image-container">
             <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Anthony Ramos<br /><span class="video-title">
+                        Say Less</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc32.jpg'></img>
+        </div>
+        <div id='d_videoFiveOne' class="image-container hidden">
+            <div class='overlay'>
                 <p id='textOverlay' class="centered artist-title">Dram x Trippie Redd<br /><span class="video-title">Ill
                         Nana</span></p>
             </div>
@@ -87,14 +94,6 @@
                 <p id='textOverlay' class="centered artist-title">Chelsea Collins ft. 24kGoldn<br /><span
                         class="video-title">
                         Water Run Dry
-                    </span></p>
-            </div>
-        </div>
-        <div id='d_videoTwentyNine' class="image-container hidden">
-            <img class="bg" src='/images/director/direc29.png'></img>
-            <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Cyrus Dobre<br /><span class="video-title">
-                        Bye Bye
                     </span></p>
             </div>
         </div>
@@ -428,6 +427,7 @@
     var d19_btn = document.getElementById("d_videoNineteen");
     var d17_btn = document.getElementById("d_videoSeventeen");
     var d_btn5 = document.getElementById("d_videoFive");
+    var d_btn51 = document.getElementById("d_videoFiveOne");
     var d16_btn = document.getElementById("d_videoSixteen");
     var d0_btn = document.getElementById("d_videoZero");
     var d_btn = document.getElementById("d_videoOne");
@@ -453,7 +453,6 @@
     var d26_btn = document.getElementById("d_videoTwentySix");
     var d27_btn = document.getElementById("d_videoTwentySeven");
     var d28_btn = document.getElementById("d_videoTwentyEight");
-    var d29_btn = document.getElementById("d_videoTwentyNine");
     var d31_btn = document.getElementById("d_videoThirtyOne");
 
 
@@ -522,7 +521,6 @@
                 d26_btn.classList.remove('hidden');
                 d27_btn.classList.remove('hidden');
                 d28_btn.classList.remove('hidden');
-                d29_btn.classList.remove('hidden');
                 d31_btn.classList.remove('hidden');
             } else {
                 directorSeemore.innerHTML = '__See More__';
@@ -549,7 +547,6 @@
                 d26_btn.classList.add('hidden');
                 d27_btn.classList.add('hidden');
                 d28_btn.classList.add('hidden');
-                d29_btn.classList.add('hidden');
                 d31_btn.classList.add('hidden');
             }
         }
@@ -579,10 +576,6 @@
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal 
-    d29_btn.onclick = function () {
-        modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/-B3BRdjKSAQ';
-    }
     d28_btn.onclick = function () {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/e-pcZw-HbWg';
@@ -644,6 +637,10 @@
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/pA2ATChYnJI';
     }
     d_btn5.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Ue3supHDQvA';
+    }
+    d_btn51.onclick = function () {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/HLuQbbMnlK4';
     }
