@@ -49,6 +49,6 @@
     "owl.carousel": "^2.2.0",
     "serve-favicon": "~2.4.5",
     "superfish": "^1.7.9",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   }
 }
