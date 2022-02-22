@@ -12,11 +12,11 @@
     "npm": "6.10.1"
   },
   "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "browser-sync": "^2.23.6",
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
     "mocha": "^5.2.0",
-    "autoprefixer": "^7.2.6",
-    "browser-sync": "^2.23.6",
     "run-sequence": "^2.2.1",
     "stylefmt": "^6.0.0"
   },
@@ -46,6 +46,7 @@
     "method-override": "^2.3.10",
     "mongoose": "^5.4.11",
     "morgan": "^1.9.1",
+    "nodemon": "^2.0.15",
     "owl.carousel": "^2.2.0",
     "serve-favicon": "~2.4.5",
     "superfish": "^1.7.9",
