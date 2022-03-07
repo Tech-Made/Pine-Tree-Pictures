@@ -87,7 +87,36 @@
         </div>
 {{!-- bottom 4 row --}}
 
+        <div id='d_videoDram' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Dram x Trippie Redd<br /><span class="video-title">Ill
+                        Nana</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc5.png'></img>
+        </div>
+        <div id='d_videoRichKid' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Rich the Kid x Miguel x TY$<br /><span
+                        class="video-title">Woah</span></p>
+            </div>
+            <img class="bg" src='/images/director/direc4.png'></img>
+        </div>
 
+        <div id='d_videoMarc' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Marc E. Bassy<br /><span
+                        class="video-title">Trouble</span></p>
+            </div>
+            <img class="bg" src='/images/director/trouble.png'></img>
+        </div>
+
+        <div id='d_videoJer' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Sevyn Streeter ft. Jeremih<br /><span
+                        class="video-title">Wet Dreamz</span></p>
+            </div>
+            <img class="bg" src='/images/director/jer.png'></img>
+        </div>
     </div>
     <p id='directorSeemore' class='seemore'>__See More__</p>
 </div>
@@ -127,15 +156,49 @@
             </div>
             <img class="bg" src='/images/producer/prod4.jpg'></img>
         </div>
-        <div id='p_videoFive' class="image-container hidden">
+        {{!-- <div id='p_videoFive' class="image-container hidden">
             <div class='overlay'>
                 <p id='textOverlay' class="centered artist-title">Steve Aoki & Backstreet Boys<br /><span
                         class="video-title">Let It Be Me</span></p>
             </div>
             <img class="bg" src='/images/producer/prod2.jpg'></img>
+        </div> --}}
+
+        {{!-- See More --}}
+
+        <div id='d_videoSab' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Sabrina Carpenter<br /><span
+                        class="video-title">Fast Times</span></p>
+            </div>
+            <img class="bg" src='/images/director/sab.png'></img>
         </div>
+
+        <div id='d_videoLen' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Lennon Stella<br /><span
+                        class="video-title">Fancy</span></p>
+            </div>
+            <img class="bg" src='/images/director/len.png'></img>
+        </div>
+        <div id='d_videoChet' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Chet Faker<br /><span
+                        class="video-title">Feel Good</span></p>
+            </div>
+            <img class="bg" src='/images/director/chet.png'></img>
+        </div>
+
+        <div id='d_videoJames' class="image-container hidden">
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">James Blake<br /><span
+                        class="video-title">Famous Last Words</span></p>
+            </div>
+            <img class="bg" src='/images/director/james.png'></img>
+        </div>
+
     </div>
-    {{!-- <p id='producerSeemore' class='seemore'>__See More__</p> --}}
+    <p id='producerSeemore' class='seemore'>__See More__</p>
 </div>
 
 <div id='editor' class="individual-section">
@@ -258,11 +321,24 @@
     var d27_btn = document.getElementById("d_videoTwentySeven");
     var d_btn12 = document.getElementById("d_videoTwelve");
 
+    var d_btnmarc = document.getElementById("d_videoMarc");
+    var d_btnrich = document.getElementById("d_videoRichKid");
+    var d_btndram = document.getElementById("d_videoDram");
+    var d_btnjer = document.getElementById("d_videoJer");
+
+
     var p_btn = document.getElementById("p_videoOne");
     var p_btn2 = document.getElementById("p_videoTwo");
     var p_btn3 = document.getElementById("p_videoThree");
     var p_btn4 = document.getElementById("p_videoFour");
     var p_btn5 = document.getElementById("p_videoFive");
+
+    var p_btn6 = document.getElementById("d_videoSab");
+    var p_btn7 = document.getElementById("d_videoLen");
+    var p_btn8 = document.getElementById("d_videoChet");
+    var p_btn9 = document.getElementById("d_videoJames");
+
+
 
     var e_btn = document.getElementById("e_videoOne");
     var e_btn2 = document.getElementById("e_videoTwo");
@@ -302,21 +378,37 @@
                 d_btn.classList.remove('hidden');
                 d27_btn.classList.remove('hidden');
                 d_btn12.classList.remove('hidden');
+
+                d_btnmarc.classList.remove('hidden');
+                d_btnrich.classList.remove('hidden');
+                d_btndram.classList.remove('hidden');
+                d_btnjer.classList.remove('hidden');
             } else {
                 directorSeemore.innerHTML = '__See More__';
                 d_btn7.classList.add('hidden');
                 d_btn.classList.add('hidden');
                 d27_btn.classList.add('hidden');
                 d_btn12.classList.add('hidden');
+
+                d_btnmarc.classList.add('hidden');
+                d_btnrich.classList.add('hidden');
+                d_btndram.classList.add('hidden');
+                d_btnjer.classList.add('hidden');
             }
         }
         if (type === 'producer') {
             if (producerSeemoreClicked) {
                 producerSeemore.innerHTML = '__Collapse__';
-                p_btn5.classList.remove('hidden');
+                p_btn6.classList.remove('hidden');
+                p_btn7.classList.remove('hidden');
+                p_btn8.classList.remove('hidden');
+                p_btn9.classList.remove('hidden');
             } else {
                 producerSeemore.innerHTML = '__See More__';
-                p_btn5.classList.add('hidden');
+                p_btn6.classList.add('hidden');
+                p_btn7.classList.add('hidden');
+                p_btn8.classList.add('hidden');
+                p_btn9.classList.add('hidden');
             }
         }
         if (type === 'photographer') {
@@ -369,6 +461,23 @@
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/SpNn32HA0SI';
     }
 
+    d_btnmarc.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/1hWhczCOO00';
+    }
+    d_btnrich.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/pA2ATChYnJI';
+    }
+    d_btndram.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/HLuQbbMnlK4';
+    }
+    d_btnjer.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctpwaCCbX1Y';
+    }
+
     p_btn.onclick = function () {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://player.vimeo.com/video/337630607?color=fafafa&title=0&byline=0&portrait=0';
@@ -386,9 +495,21 @@
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/oOWBsmgjmPo';
     }
-    p_btn5.onclick = function () {
+    p_btn6.onclick = function () {
         modal.style.display = "block";
-        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Vk-VHOCyrTI';
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Gla5AzlHnS4';
+    }
+    p_btn7.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/Buq2ruaf-k0';
+    }
+    p_btn8.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/YyODHqG2Tz0';
+    }
+    p_btn9.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/9cRtWPeBilU';
     }
 
     e_btn.onclick = function () {
