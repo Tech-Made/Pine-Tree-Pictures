@@ -117,6 +117,34 @@
             </div>
             <img class="bg" src='/images/director/jer.png'></img>
         </div>
+
+        <div id='d_videoJohnnyLove' class="image-container hidden">
+            <img class="bg" src='/images/director/direcJohnnyLove.png'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Johnny Drille<br /><span class="video-title">loving is harder</span></p>
+            </div>
+        </div>
+
+
+        <div id='d_videoKevWoo' class="image-container hidden">
+            <img class="bg" src='/images/director/direcKevWoo.png'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Kevin Woo<br /><span class="video-title">GOT IT</span></p>
+            </div>
+        </div>
+        <div id='d_videoMMC' class="image-container hidden">
+            <img class="bg" src='/images/director/direcDesRocks.png'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Des Rocks<br /><span class="video-title">MMC</span></p>
+            </div>
+        </div>
+
+        <div id='d_videoLayto' class="image-container hidden">
+            <img class="bg" src='/images/bg6.jpg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Layto<br /><span class="video-title">Twenty Seven</span></p>
+            </div>
+        </div>
     </div>
     <p id='directorSeemore' class='seemore'>__See More__</p>
 </div>
@@ -320,6 +348,10 @@
     var d_btn7 = document.getElementById("d_videoSeven");
     var d27_btn = document.getElementById("d_videoTwentySeven");
     var d_btn12 = document.getElementById("d_videoTwelve");
+    var d_btn13 = document.getElementById("d_videoJohnnyLove");
+    var d_btn14 = document.getElementById("d_videoKevWoo");
+    var d_btn15 = document.getElementById("d_videoMMC");
+    var d_btn16 = document.getElementById("d_videoLayto");
 
     var d_btnmarc = document.getElementById("d_videoMarc");
     var d_btnrich = document.getElementById("d_videoRichKid");
@@ -370,7 +402,6 @@
 
     const swapSeemoreClicked = (type) => {
 
-
         if (type === 'director') {
             if (directorSeemoreClicked) {
                 directorSeemore.innerHTML = '__Collapse__';                
@@ -383,6 +414,11 @@
                 d_btnrich.classList.remove('hidden');
                 d_btndram.classList.remove('hidden');
                 d_btnjer.classList.remove('hidden');
+
+                d_btn13.classList.remove('hidden');
+                d_btn14.classList.remove('hidden');
+                d_btn15.classList.remove('hidden');
+                d_btn16.classList.remove('hidden');
             } else {
                 directorSeemore.innerHTML = '__See More__';
                 d_btn7.classList.add('hidden');
@@ -394,6 +430,11 @@
                 d_btnrich.classList.add('hidden');
                 d_btndram.classList.add('hidden');
                 d_btnjer.classList.add('hidden');
+
+                d_btn13.classList.add('hidden');
+                d_btn14.classList.add('hidden');
+                d_btn15.classList.add('hidden');
+                d_btn16.classList.add('hidden');
             }
         }
         if (type === 'producer') {
@@ -476,6 +517,30 @@
     d_btnjer.onclick = function () {
         modal.style.display = "block";
         document.getElementById('videoframe').src = 'https://www.youtube.com/embed/ctpwaCCbX1Y';
+    }
+
+    var d_btn13 = document.getElementById("d_videoJohnnyLove");
+        d_btn13.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/tqozCsrbWS4';
+    }
+
+    var d_btn14 = document.getElementById("d_videoKevWoo");
+        d_btn14.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/CPSRJmOGvkI';
+    }
+
+    var d_btn15 = document.getElementById("d_videoMMC");
+        d_btn15.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/HPFEWN317Xw';
+    }
+
+    var d_btn16 = document.getElementById("d_videoLayto");
+        d_btn16.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById('videoframe').src = 'https://www.youtube.com/embed/CFztHf_yeSk';
     }
 
     p_btn.onclick = function () {
