@@ -27,24 +27,11 @@
     </div>
     <div id='workGridContainer' class="work-grid-container">
 
-        <div id='d_videoFiveOne' class="image-container">
-            <img class="bg" src='/images/director/direc33.jpg'></img>
+        <div id='d_videoOne' class="image-container">
+            <img class="bg" src='/images/director/direc3.jpg'></img>
             <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">John Legend<br /><span class="video-title">Love in Las Vegas The Residency</span></p>
-            </div>
-        </div>
-        <div id='d_videoFive' class="image-container">
-            <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Anthony Ramos<br /><span class="video-title">
-                        Say Less</span></p>
-            </div>
-            <img class="bg" src='/images/director/direc32.jpg'></img>
-        </div>
-        <div id='d_videoZero' class="image-container">
-            <img class="bg" src='/images/director/direc1.jpg'></img>
-            <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Vic Mensa<br /><span class="video-title">Dark
-                        Things</span></p>
+                <p id='textOverlay' class="centered artist-title">Call Me Karizma<br /><span
+                        class="video-title">Rebels</span></p>
             </div>
         </div>
         <div id='d_videoSeventeen' class="image-container">
@@ -54,15 +41,28 @@
                         Roses</span></p>
             </div>
         </div>
+        <div id='d_videoFiveOne' class="image-container">
+            <img class="bg" src='/images/director/direc33.jpg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">John Legend<br /><span class="video-title">Love in Las Vegas The Residency</span></p>
+            </div>
+        </div>
+        <div id='d_videoZero' class="image-container">
+            <img class="bg" src='/images/director/direc1.jpg'></img>
+            <div class='overlay'>
+                <p id='textOverlay' class="centered artist-title">Vic Mensa<br /><span class="video-title">Dark
+                        Things</span></p>
+            </div>
+        </div>
 
 
 {{!-- bottom 4 row --}}
-        <div id='d_videoOne' class="image-container hidden">
-            <img class="bg" src='/images/director/direc3.jpg'></img>
+        <div id='d_videoFive' class="image-container hidden">
             <div class='overlay'>
-                <p id='textOverlay' class="centered artist-title">Call Me Karizma<br /><span
-                        class="video-title">Rebels</span></p>
+                <p id='textOverlay' class="centered artist-title">Anthony Ramos<br /><span class="video-title">
+                        Say Less</span></p>
             </div>
+            <img class="bg" src='/images/director/direc32.jpg'></img>
         </div>
         <div id='d_videoSeven' class="image-container hidden">
             <div class='overlay'>
@@ -406,7 +406,7 @@
             if (directorSeemoreClicked) {
                 directorSeemore.innerHTML = '__Collapse__';                
                 d_btn7.classList.remove('hidden');
-                d_btn.classList.remove('hidden');
+                d_btn5.classList.remove('hidden');
                 d27_btn.classList.remove('hidden');
                 d_btn12.classList.remove('hidden');
 
@@ -422,7 +422,7 @@
             } else {
                 directorSeemore.innerHTML = '__See More__';
                 d_btn7.classList.add('hidden');
-                d_btn.classList.add('hidden');
+                d_btn5.classList.add('hidden');
                 d27_btn.classList.add('hidden');
                 d_btn12.classList.add('hidden');
 

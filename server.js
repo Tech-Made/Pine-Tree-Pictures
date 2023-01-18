@@ -7,8 +7,8 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
-const port = process.env.PORT || 5000
-require('./data/pine-tree-pictures-db');
+const port = process.env.PORT || 5100
+// require('./data/pine-tree-pictures-db');
 const cors = require('cors')
 
 // view engine setup
